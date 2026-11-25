@@ -1,0 +1,98 @@
+Assumption checks on the combined model (hx_combined.py), which is imported, not edited. 
+
+CHECK 1. Suffering weight LAM (LOSS fixed at 2). Verdict per claim; detail at each LAM.
+   claim                                         LAM=1.0 LAM=1.5 LAM=2.0 LAM=3.0 LAM=5.0   changes at
+   1 breadth bounded, buffers loss               yes      yes      yes      yes      yes        robust
+   2a calm skills complementary (chronic)        yes      yes      yes      yes      yes        robust
+   2b equanimity-first beats release-first (ord) yes      yes      yes      yes      NO         differs from LAM=2 at 5.0
+   2b equanimity-first beats release-first (chr) NO       NO       NO       NO       NO         robust
+   3a any relief beats none                      yes      yes      yes      yes      yes        robust
+   3b gradient beats gate                        NO       NO       NO       NO       NO         robust
+   3c savoring phase adds value                  NO       NO       NO       NO       NO         robust
+   4 habitual numbing worse than nothing         yes      yes      yes      yes      yes        robust
+   5a urge steering less helps                   yes      yes      yes      yes      yes        robust
+   5b salience is main cause of underuse         NO       NO       NO       NO       NO         robust
+   6 spacing decides acquisition                 yes      yes      yes      yes      yes        robust
+   7a few close people beat solo (average)       yes      yes      yes      yes      NO         differs from LAM=2 at 5.0
+   7b solo wins for low sociability              yes      yes      yes      yes      yes        robust
+   9 skill/sens/relief last, material fades      yes      yes      yes      yes      yes        robust
+   10 moderate arousal best, high worst w/o eq.  yes      yes      yes      yes      yes        robust
+   11 engineered feed lowers V                   yes      yes      yes      yes      yes        robust
+   gap expansionist - default                    yes      yes      yes      yes      yes        robust
+   detail:
+   1 breadth bounded, buffers loss          +0.08/+0.00 loss 0.12->0.03 | +0.07/+0.00 loss 0.16->0.03 | +0.08/+0.00 loss 0.13->0.03 | +0.08/+0.00 loss 0.12->0.03 | +0.09/+0.00 loss 0.10->0.04
+   2a calm skills complementary (chronic)   interaction +0.61 | interaction +0.76 | interaction +0.91 | interaction +1.16 | interaction +1.67
+   2b equanimity-first beats release-first  EC-CE +0.14 | EC-CE +0.12 | EC-CE +0.12 | EC-CE +0.08 | EC-CE +0.02
+   2b equanimity-first beats release-first  EC-CE +0.01 | EC-CE -0.02 | EC-CE -0.10 | EC-CE +0.03 | EC-CE +0.04
+   3a any relief beats none                 +0.27 | +0.36 | +0.45 | +0.62 | +1.02
+   3b gradient beats gate                   +0.010 | +0.007 | +0.006 | +0.004 | +0.008
+   3c savoring phase adds value             -0.001 | -0.003 | -0.005 | -0.008 | -0.048
+   4 habitual numbing worse than nothing    0.26 vs 1.56 | -0.09 vs 1.38 | -0.44 vs 1.20 | -1.15 vs 0.84 | -2.56 vs 0.13
+   5a urge steering less helps              pi0-pi1 +1.11 | pi0-pi1 +1.11 | pi0-pi1 +1.12 | pi0-pi1 +1.15 | pi0-pi1 +1.23
+   5b salience is main cause of underuse    1% vs 21% | 1% vs 22% | 1% vs 23% | 1% vs 24% | 1% vs 25%
+   6 spacing decides acquisition            45% vs 0% | 55% vs 0% | 35% vs 0% | 35% vs 0% | 35% vs 0%
+   7a few close people beat solo (average)  best n=2 +0.40 | best n=3 +0.36 | best n=2 +0.31 | best n=2 +0.21 | best n=3 +-0.01
+   7b solo wins for low sociability         +0.07 | +0.13 | +0.22 | +0.33 | +0.49
+   9 skill/sens/relief last, material fades mate 56% skil 119% sens 101% reli 121% | mate 52% skil 118% sens 97% reli 112% | mate 54% skil 120% sens 98% reli 122% | mate 53% skil 124% sens 102% reli 118% | mate 57% skil 129% sens 101% reli 129%
+   10 moderate arousal best, high worst w/o a.2 1.90 a.5 2.54 a.8 1.85 | a.2 1.81 a.5 2.42 a.8 1.73 | a.2 1.71 a.5 2.31 a.8 1.62 | a.2 1.52 a.5 2.11 a.8 1.41 | a.2 1.15 a.5 1.73 a.8 0.99
+   11 engineered feed lowers V              1.55 vs 2.15 | 1.44 vs 2.07 | 1.33 vs 1.96 | 1.10 vs 1.78 | 0.67 vs 1.42
+   gap expansionist - default               +2.68 (no-numb world +1.31) | +2.92 (no-numb world +1.34) | +3.17 (no-numb world +1.37) | +3.68 (no-numb world +1.44) | +4.65 (no-numb world +1.56)
+   gap with LAM=LOSS swept jointly: 1.0: +2.68  1.5: +2.92  2.0: +3.17  3.0: +3.68  5.0: +4.65
+   raw lives (default / expansionist), LAM only: 1.0: 0.06/2.74  1.5: -0.26/2.65  2.0: -0.60/2.57  3.0: -1.27/2.41  5.0: -2.57/2.08
+
+CHECK 2. Distress habituation (FADE) at f x current; pleasure adaptation unchanged.
+                                     f=1.0    f=0.5    f=0.2    f=0.0    
+   claim 3: no relief                1.791    1.647    1.555    1.485    
+   claim 3: best relief (gate/grad)  2.236    2.190    2.149    2.126    
+     relief floor (best - none)      0.445    0.543    0.594    0.641    
+     gradient - gate                 0.006    0.016    0.015    0.021    
+     three-phase - two-phase         -0.005   -0.000   0.007    0.000    
+   claim 4: nothing                  1.202    1.102    1.030    0.976    
+   claim 4: bridge (numb 2 periods)  1.388    1.321    1.275    1.240    
+   claim 4: habit (numb if S>0.5)    -0.443   -0.501   -0.539   -0.564   
+   claim 4: habit (numb if S>2)      1.407    1.347    1.306    1.299    
+   claim 9 kept: material            0.544    0.551    0.547    0.541    
+   claim 9 kept: sensory             0.751    0.537    0.557    0.448    
+   claim 9 kept: social              1.278    1.403    1.401    1.383    
+   claim 9 kept: skill               1.200    1.238    1.230    1.220    
+   claim 9 kept: relief              1.218    1.205    1.278    1.268    
+   claim 9 kept: sensitizing         0.980    1.011    0.982    0.986    
+   claim 9 late gain: relief         0.293    0.297    0.312    0.311    
+   lives: default                    -0.602   -0.664   -0.692   -0.710   
+   lives: expansionist               2.568    2.562    2.514    2.518    
+   lives: gap                        3.170    3.226    3.206    3.228    
+   lives: gap, no numbing in world   1.367    1.415    1.404    1.430    
+   f=1.0: 3a:yes  3b:NO  3c:NO  4:yes  9:yes  gap:yes
+   f=0.5: 3a:yes  3b:NO  3c:NO  4:yes  9:yes  gap:yes
+   f=0.2: 3a:yes  3b:NO  3c:NO  4:yes  9:yes  gap:yes
+   f=0.0: 3a:yes  3b:yes  3c:NO  4:yes  9:yes  gap:yes
+
+CHECK 3. Equanimity/release as costly skills (order EC, decay 0.01/period unpracticed); 10 seeds
+   [ordinary] policy                                   slots  V all   V t200+  e_end cr_end  payback
+   none                                        0%   2.326   2.392   0.00  0.00    -
+   constant: 1 slot every 3rd period          11%   2.380   2.438   0.42  0.00    19
+   heavy early (t<60) then every 6th          11%   2.474   2.506   0.26  0.03    65
+   heavy early only, no maintenance            7%   2.454   2.476   0.05  0.02    65
+   only when distressed (S>1.5)                1%   2.315   2.381   0.02  0.00    never
+   [ordinary] order under 'constant: 1 slot every 3rd period': E 2.380  C 2.614  EC 2.380  CE 2.614
+   [ordinary] order under 'heavy early (t<60) then every 6th': E 2.383  C 2.592  EC 2.474  CE 2.610
+   [ordinary] decay 0.003: none/EC 2.326  constant/EC 2.530  constant/CE 2.750  heavy early/EC 2.612  heavy early/CE 2.809
+   [ordinary] decay 0.03: none/EC 2.326  constant/EC 2.309  constant/CE 2.433  heavy early/EC 2.341  heavy early/CE 2.418
+   [chronic (inflow 0.3)] policy                                   slots  V all   V t200+  e_end cr_end  payback
+   none                                        0%   0.799   0.845   0.00  0.00    -
+   constant: 1 slot every 3rd period          11%   1.032   1.170   0.37  0.00    34
+   heavy early (t<60) then every 6th          11%   1.052   1.107   0.22  0.01    35
+   heavy early only, no maintenance            7%   0.970   0.953   0.05  0.00    35
+   only when distressed (S>1.5)                4%   0.781   0.838   0.12  0.00    never
+   [chronic (inflow 0.3)] order under 'constant: 1 slot every 3rd period': E 1.032  C 0.745  EC 1.032  CE 0.745
+   [chronic (inflow 0.3)] order under 'heavy early (t<60) then every 6th': E 1.049  C 0.708  EC 1.052  CE 0.797
+   [chronic (inflow 0.3)] decay 0.003: none/EC 0.799  constant/EC 1.155  constant/CE 0.902  heavy early/EC 1.253  heavy early/CE 0.950
+   [chronic (inflow 0.3)] decay 0.03: none/EC 0.799  constant/EC 0.856  constant/CE 0.674  heavy early/EC 0.859  heavy early/CE 0.673
+
+CHECK 4. Savoring phase (claim 3 setup, gate thr=1; two-phase expands at S<=1, three-phase at S<=0.5)
+   RHO_P=0.0: two-phase 1.575  three-phase 1.592  diff +0.017
+   RHO_P=0.1: two-phase 2.230  three-phase 2.225  diff -0.005
+   RHO_P=0.3: two-phase 2.608  three-phase 2.613  diff +0.005
+   share of periods t<150 with S>1 (relief) 7%, 0.5<S<=1 (savor window) 10%, S<=0.5 83%; acquired uses 27.4
+
+(runtime 107s on 2 cores)

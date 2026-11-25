@@ -10,7 +10,7 @@ This repository contains:
 
 - **[docs/theory.md](docs/theory.md)**: the theory: motivation, thesis, value commitments, sub-claims, content constraints, relation to prior work, objections and open problems, with each claim linked to the model that tests it.
 - **[docs/assumptions.md](docs/assumptions.md)**: every assumption, including implicit ones, marked as normative, evidence-backed, argued, or invented, with what changes if it's wrong.
-- **[model/](model/)**: 26 small simulation scripts (Python, numpy only).
+- **[model/](model/)**: 27 small simulation scripts (Python, numpy only).
 - **[proofs/](proofs/)**: proofs of the results that can be proved, with their limits.
 - **[results/](results/)**: saved output of every script.
 - **[prior-art/](prior-art/)**: literature checks (habituation and adaptation, wanting and liking, evolutionary grounding, adaptation by kind of good, stimulation and arousal, meaning), with each citation tagged by how well it was verified.
@@ -22,7 +22,7 @@ This repository contains:
 In plain terms, with how sure each one is. **Proved** means it follows mathematically from the model's assumptions. **Simulated** means it showed up in simulations with made-up numbers. **Research-backed** means published studies point the same way. Details and caveats are in [docs/theory.md](docs/theory.md).
 
 1. **Variety helps, but mostly as a safety net.** Having more things you enjoy doesn't keep raising how good life feels, because your time is limited. What it buys is resilience when you lose one, and time for each favorite to feel fresh again. *Proved.*
-2. **Getting better at noticing only pays if you stay calm.** Learning to notice finer detail (in music, food, people) reveals more to enjoy, but also more to dislike. Without equanimity, the unpleasant parts grab your attention. Experts who grade and categorize everything feel *less*, which matches published research. *Proved for a single moment; simulated over time; research-backed.*
+2. **Getting better at noticing only pays if you stay calm.** Learning to notice finer detail (in music, food, people) reveals more to enjoy, but also more to dislike. Without equanimity, the unpleasant parts grab your attention. Experts who grade and categorize everything feel *less*, which matches published research. Calm takes practice: steady practice pays off, while practicing only when things are bad doesn't. *Proved for a single moment; simulated over time; research-backed.*
 3. **When you're struggling, put more effort into relief, but never all of it.** The worse things are, the more effort should go to easing them, while keeping a little going toward things that grow your enjoyment. *Proved under stated assumptions.*
 4. **Numbing yourself is fine as a bridge, dangerous as a habit.** Escaping a bad moment occasionally can help. Doing it habitually can lock into a loop that leaves you worse off than doing nothing, and the model gives the exact conditions for that loop. Avoiding these loops (and endless feeds) was the single biggest lever in the combined model. *Proved and simulated.*
 5. **Your urges are a lagging guess about what you'll enjoy.** Letting urges decide less often, without fighting them, tends to help. *Partly proved; simulated.*
@@ -33,7 +33,7 @@ In plain terms, with how sure each one is. **Proved** means it follows mathemati
 10. **Meaning mostly works by making hard things hurt less.** It doesn't add much pleasure directly. Its main effect is lowering how much we resist and suffer from difficulties. *Research-backed; simulated.*
 11. **Build capacity when young, enjoy it when old, and prefer things that pay off soon.** This held under every way of adding up a life that we tried. Quick-paying investments are the best hedge against a shorter life than expected. Counting boredom as suffering is enough to explain why a long, dull life isn't better than a shorter, vivid one. *Simulated.*
 
-When all the mechanisms were run together in [one combined model](model/hx_combined.py), 6 of 11 headline claims held, 4 weakened, and 1 reversed; see [docs/theory.md §6b](docs/theory.md).
+When all the mechanisms were run together in [one combined model](model/hx_combined.py), 6 of 11 headline claims held, 4 weakened, and 1 reversed. Those verdicts mostly survived [checks of three key assumptions](model/hx_assumption_checks.py): how heavily suffering is weighted, pain adapting more slowly than pleasure, and calm being a skill that takes practice to build. See [docs/theory.md §6b](docs/theory.md).
 
 **Likely novel** (see the prior-art notes): the pleasure-as-relief crossover, breadth-as-resilience conditional on convex grief with the bundle threshold, and the integrated model. Most single components already exist in the literature and are cited.
 

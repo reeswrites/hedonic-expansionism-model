@@ -311,6 +311,8 @@ Each result above comes from a separate toy model with its own invented paramete
 
 **A default life versus one following the recommendations together** differs by a large margin, and about 70% of that gap comes from one mechanism: avoiding numbing loops (and the engineered feed). Three interactions matter for the theory. First, liking-driven choice still numbs, because numbing's immediate relief is genuinely liked; an explicit rule against habitual numbing is needed, and it is the biggest single lever. Second, planning can backfire: scheduling skill and sensitizing sessions crowded out curiosity-driven choice, which already found those sources. Third, time spent on equanimity practice paid off only under chronic distress, where both calm skills were needed together. The combined model is itself a toy, and its gap depends heavily on including a numbing source; see its caveats in the script docstring.
 
+**Assumption checks** ([hx_assumption_checks.py](../model/hx_assumption_checks.py)). The verdicts survive varying the suffering weight from 1 to 5 (except the small social edge, gone at 5) and letting pain adapt more slowly than pleasure, which raises relief's value as a floor by up to 45%. With the calm skills made costly to build and slow to keep, their order matters again, in opposite directions: equanimity first under chronic distress, concept release first under ordinary distress; and practicing only when distressed never pays. The null result for the savoring phase is a test artifact: in the model, savoring relieves distress in every phase, so a separate savoring phase only pauses expansion.
+
 ## 7. Objections and replies
 
 ### Standard objections
