@@ -17,22 +17,23 @@ This repository contains:
 
 > **Read results as directions, not sizes.** Most parameters are invented; a few are calibrated from the literature (adaptation rates by kind of good, the acquired-taste curve). A result that is proved and simulated is solid *as a consequence of its assumptions*; whether the assumptions hold is a separate question, addressed (incompletely) by the prior-art notes and listed openly in [docs/assumptions.md](docs/assumptions.md). No empirical data has been collected for this model.
 
-## Findings at a glance
+## What the models suggest
 
-| Area | Finding | Status |
-| --- | --- | --- |
-| Reach | Breadth alone has bounded returns under fixed time; open-endedness comes from routes and depth. Breadth's job is resilience and recovery time. | P2 proved; holds in combined model |
-| Fractal liking and calm | Finer resolution never lowers what a moment can deliver *if* aversive parts can't capture attention; with capture it can. Categorizing is itself a numbing defense, matching evidence that expertise dulls emotion. | Lemma proved; simulated |
-| Suffering and relief | The optimal relief share rises smoothly with distress. Habitual numbing locks into a loop under an exact condition and is worse than nothing when suffering would fade. | Proved; numbing result holds in combined model |
-| Wanting | Wanting as cached value plus sensitization; lock-in proved; letting the urge steer less helps. | Partly proved; holds |
-| Acquired taste | Spacing decides whether a taste forms; complex targets acquire slowly and last; stress makes acquirable tastes permanently missed. | Simulated, partly calibrated |
-| Adaptation | Adaptation is near-complete for purchases and circumstances, small for intentional, varied activities. Skill-building, sensitizing and relief expansion lasts; material fades. | Literature-calibrated simulation |
-| Breadth and loss | Breadth buffers only if grief is convex in the share lost; if concave, bundling wins. Closed-form bundle threshold. | Proved |
-| Social | A few close, chosen people beat a broad solo life for an average person; solitude is better for low sociability. Compromise is the weakest way to be together; taking turns is how pairs expand. | Simulated |
-| Arousal | Arousal acts on pleasure mainly through attention; moderate arousal is best; calm pleasure lasts longer. | Literature-backed; simulated |
-| Meaning | Meaning works mainly as quieting (lowering resistance to suffering), partly by slowing adaptation, only slightly as pleasure. | Literature-backed; simulated |
-| A finite life | Build capacity young, spend old, under all 24 aggregation and discounting rules tested; payoff speed is the hedge against a short life; counting boredom as suffering blocks "a long dull life beats a short intense one". | Simulated |
-| Robustness | In one combined model with shared parameters, 6 of 11 headline claims hold, 4 weaken, 1 flips; avoiding numbing loops is the largest single lever. | Simulated |
+In plain terms, with how sure each one is. **Proved** means it follows mathematically from the model's assumptions. **Simulated** means it showed up in simulations with made-up numbers. **Research-backed** means published studies point the same way. Details and caveats are in [docs/theory.md](docs/theory.md).
+
+1. **Variety helps, but mostly as a safety net.** Having more things you enjoy doesn't keep raising how good life feels, because your time is limited. What it buys is resilience when you lose one, and time for each favorite to feel fresh again. *Proved.*
+2. **Getting better at noticing only pays if you stay calm.** Learning to notice finer detail (in music, food, people) reveals more to enjoy, but also more to dislike. Without equanimity, the unpleasant parts grab your attention. Experts who grade and categorize everything feel *less*, which matches published research. *Proved for a single moment; simulated over time; research-backed.*
+3. **When you're struggling, put more effort into relief, but never all of it.** The worse things are, the more effort should go to easing them, while keeping a little going toward things that grow your enjoyment. *Proved under stated assumptions.*
+4. **Numbing yourself is fine as a bridge, dangerous as a habit.** Escaping a bad moment occasionally can help. Doing it habitually can lock into a loop that leaves you worse off than doing nothing, and the model gives the exact conditions for that loop. Avoiding these loops (and endless feeds) was the single biggest lever in the combined model. *Proved and simulated.*
+5. **Your urges are a lagging guess about what you'll enjoy.** Letting urges decide less often, without fighting them, tends to help. *Partly proved; simulated.*
+6. **New tastes need spaced exposure and a calm mind.** Trying something you dislike too often, too fast, or while stressed tends to kill the taste before it forms. Complex things (music, crafts, cuisines) take longer to like but stay rewarding much longer. *Simulated, calibrated to a published music study.*
+7. **Invest in activities and skills, not purchases or status.** People adapt almost completely to new things and circumstances, but much less to varied, engaging activities. Gains from building skills, regular pleasures like touch or exercise, and genuine rest lasted; gains from purchases faded. *Simulated, calibrated from the adaptation research.*
+8. **A few close, chosen people beat a broad solo life for most people.** The benefit comes mostly from shared relief. Solitude is the better life for people who recharge alone or find company draining. Between two people, compromising on something neither loves is the weakest option; taking turns with each other's favorites is how both expand. *Simulated; research-backed in part.*
+9. **Calm beats keyed-up.** Moderate arousal works best, and calm pleasures last longer than exciting ones. Arousal mostly works through attention: it amplifies whatever already has your focus, good or bad. *Research-backed; simulated.*
+10. **Meaning mostly works by making hard things hurt less.** It doesn't add much pleasure directly. Its main effect is lowering how much we resist and suffer from difficulties. *Research-backed; simulated.*
+11. **Build capacity when young, enjoy it when old, and prefer things that pay off soon.** This held under every way of adding up a life that we tried. Quick-paying investments are the best hedge against a shorter life than expected. Counting boredom as suffering is enough to explain why a long, dull life isn't better than a shorter, vivid one. *Simulated.*
+
+When all the mechanisms were run together in [one combined model](model/hx_combined.py), 6 of 11 headline claims held, 4 weakened, and 1 reversed; see [docs/theory.md §6b](docs/theory.md).
 
 **Likely novel** (see the prior-art notes): the pleasure-as-relief crossover, breadth-as-resilience conditional on convex grief with the bundle threshold, and the integrated model. Most single components already exist in the literature and are cited.
 
