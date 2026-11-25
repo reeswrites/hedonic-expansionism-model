@@ -1,0 +1,42 @@
+=== mudita 0.0, learning through valuing 0.0
+ overlap |       solo   parallel compromise      turns    overlap      mixed     expand
+    -0.3 |        507        610        620        635        658        669        669
+     0.0 |        506        609        645        660        674        679        679
+     0.5 |        509        612        686        699        701        702        702
+     0.9 |        515        618        723        731        728        728        728
+
+=== mudita 0.0, learning through valuing 0.05
+ overlap |       solo   parallel compromise      turns    overlap      mixed     expand
+    -0.3 |        507        610        642        703        702        694        700
+     0.0 |        506        609        673        717        714        707        714
+     0.5 |        509        612        708        735        727        725        732
+     0.9 |        515        618        733        743        740        740        741
+
+=== mudita 0.5, learning through valuing 0.0
+ overlap |       solo   parallel compromise      turns    overlap      mixed     expand
+    -0.3 |        507        736        900        923        956        957        957
+     0.0 |        506        735        938        960        981        981        981
+     0.5 |        509        739        998       1018       1021       1021       1021
+     0.9 |        515        747       1054       1066       1062       1062       1062
+
+=== mudita 0.5, learning through valuing 0.05
+ overlap |       solo   parallel compromise      turns    overlap      mixed     expand
+    -0.3 |        507        736        933       1024       1023       1019       1025
+     0.0 |        506        735        979       1045       1040       1040       1044
+     0.5 |        509        739       1032       1072       1061       1061       1067
+     0.9 |        515        747       1069       1083       1079       1079       1081
+
+=== tastes after 200 periods (mudita 0.5, learning 0.05): liked activities (>=6, both people) / taste overlap
+   start |         solo     parallel   compromise        turns      overlap        mixed       expand
+     0.0 |   7.1 / -0.03   7.1 / -0.03   9.5 / 0.31  10.5 / 0.74  10.3 / 0.55  10.3 / 0.54  10.5 / 0.64
+     0.5 |   7.5 / 0.49   7.5 / 0.49   9.2 / 0.70   9.8 / 0.84   9.7 / 0.76   9.7 / 0.76   9.8 / 0.82
+  (at start, overlap 0: liked 7.1)
+
+=== unequal mudita: A has 0.5, B has 0 (learning 0.05, overlap 0): value A / B
+        solo: A    520  B    492
+    parallel: A    747  B    593
+  compromise: A    982  B    667
+       turns: A   1050  B    708
+     overlap: A   1034  B    715
+       mixed: A   1033  B    713
+      expand: A   1038  B    714

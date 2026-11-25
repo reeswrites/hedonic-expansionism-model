@@ -1,0 +1,18 @@
+T1. Mean felt valence (and % negative hours) by arousal and equanimity, resolution 3
+ arousal | e=0.0  | e=0.5  | e=0.8  | equanimity gain (0 -> 0.8)
+     0.2 |  0.37 (43%) |  2.04 (11%) |  2.50 ( 4%) | +2.13
+     0.5 |  0.43 (46%) |  2.23 (11%) |  2.72 ( 3%) | +2.29
+     0.8 | -0.30 (56%) |  1.45 (26%) |  2.02 ( 9%) | +2.32
+
+T2. Calm vs excited carryover, isolated (arousal 0.5, e=0.5): no carryover / excited (0.2) / calm (0.6)
+  carryover kept 0.0: mean felt valence  1.57
+  carryover kept 0.2: mean felt valence  1.90
+  carryover kept 0.6: mean felt valence  2.56
+
+T4. Without the engagement curve (the biased first version), for comparison: best arousal, ideal 0.5
+  best arousal 0.1 (valence 2.53)
+
+T3. Ideal arousal varies by person/state: best arousal level for ideal 0.2 / 0.5 / 0.8 (e=0.5)
+  ideal 0.2: best arousal 0.3 (valence 2.25)
+  ideal 0.5: best arousal 0.5 (valence 2.23)
+  ideal 0.8: best arousal 0.5 (valence 2.15)

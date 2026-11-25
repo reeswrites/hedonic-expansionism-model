@@ -1,0 +1,45 @@
+T1. Sociability and absorption: best fixed social share
+ gamma | absorb=0.0  absorb=0.4  absorb=0.8 
+   0.4 | 0.4 (par 1.0)   0.2 (par 0.0)   0.2 (par 0.0)
+   0.7 | 0.4 (par 0.0)   0.4 (par 0.0)   0.4 (par 0.0)
+   1.0 | 0.5 (par 0.0)   0.5 (par 0.0)   0.5 (par 0.0)
+   1.3 | 0.5 (par 0.0)   0.5 (par 0.0)   0.5 (par 0.0)
+
+T2. Rhythm vs fixed mix (battery-aware alternation)
+  gamma=0.4                            solo   -25.8 | fixed   -22.5 (share 0.2, parallel 0.0) | rhythm   -22.8 (dose 0.3 when battery>=0.4)
+  gamma=0.7                            solo   -25.8 | fixed    -7.0 (share 0.4, parallel 0.0) | rhythm    -9.4 (dose 0.6 when battery>=0.4)
+  gamma=1.0                            solo   -25.8 | fixed    13.2 (share 0.5, parallel 0.0) | rhythm    14.7 (dose 0.9 when battery>=0.6)
+  gamma=1.3                            solo   -25.8 | fixed    21.3 (share 0.5, parallel 0.0) | rhythm    26.9 (dose 0.9 when battery>=0.6)
+
+T3. Which relief works for you: shared vs solitude
+  shared relief only, gamma=0.7        solo   -54.9 | fixed   -19.7 (share 0.4, parallel 0.0) | rhythm   -22.0 (dose 0.6 when battery>=0.4)
+  shared relief only, gamma=1.0        solo   -54.9 | fixed     5.6 (share 0.5, parallel 0.0) | rhythm     7.3 (dose 0.9 when battery>=0.6)
+  solitude relief only, gamma=0.7      solo     1.1 | fixed     3.1 (share 0.1, parallel 0.0) | rhythm    -0.6 (dose 0.3 when battery>=1.0)
+  solitude relief only, gamma=1.0      solo     1.1 | fixed     5.8 (share 0.2, parallel 0.0) | rhythm     4.0 (dose 0.3 when battery>=1.0)
+  both, gamma=0.7                      solo     1.1 | fixed    12.1 (share 0.4, parallel 0.0) | rhythm    11.5 (dose 0.3 when battery>=1.0)
+  both, gamma=1.0                      solo     1.1 | fixed    26.4 (share 0.5, parallel 0.0) | rhythm    28.2 (dose 0.9 when battery>=0.8)
+
+T4. Relationship risk: how much to keep in solo sources
+  loss prob 0.0, grief scale 4.0       solo   -25.8 | fixed    28.7 (share 0.5, parallel 0.0) | rhythm    36.5 (dose 0.9 when battery>=0.4)
+  loss prob 0.0, grief scale 16.0      solo   -25.8 | fixed    28.7 (share 0.5, parallel 0.0) | rhythm    36.5 (dose 0.9 when battery>=0.4)
+  loss prob 0.004, grief scale 4.0     solo   -25.8 | fixed    19.7 (share 0.5, parallel 0.0) | rhythm    24.2 (dose 0.9 when battery>=0.4)
+  loss prob 0.004, grief scale 16.0    solo   -25.8 | fixed     0.7 (share 0.5, parallel 0.0) | rhythm    -0.8 (dose 0.6 when battery>=0.6)
+  loss prob 0.02, grief scale 4.0      solo   -25.8 | fixed    -0.3 (share 0.5, parallel 0.0) | rhythm    -0.3 (dose 0.9 when battery>=0.4)
+  loss prob 0.02, grief scale 16.0     solo   -25.8 | fixed   -24.7 (share 0.1, parallel 1.0) | rhythm   -53.8 (dose 0.3 when battery>=1.0)
+  loss prob 0.05, grief scale 4.0      solo   -25.8 | fixed   -22.7 (share 0.1, parallel 0.5) | rhythm   -24.2 (dose 0.3 when battery>=1.0)
+  loss prob 0.05, grief scale 16.0     solo   -25.8 | fixed   -25.2 (share 0.1, parallel 1.0) | rhythm  -117.0 (dose 0.3 when battery>=1.0)
+
+T4b. Same risk, spread over 3 friends
+  loss prob 0.02, grief 16, 3 friends  solo   -25.8 | fixed    14.8 (share 0.5, parallel 0.0) | rhythm    19.6 (dose 0.9 when battery>=0.4)
+  loss prob 0.05, grief 16, 3 friends  solo   -25.8 | fixed     2.4 (share 0.5, parallel 0.0) | rhythm     2.0 (dose 0.6 when battery>=0.4)
+
+T5. Absorption skill: value of protected solitude over a long horizon
+  skill growth 0.0, interference 0.2   solo   -32.3 | fixed     9.8 (share 0.5, parallel 0.0) | rhythm    11.8 (dose 0.9 when battery>=0.6)
+  skill growth 0.0, interference 0.6   solo   -32.3 | fixed     9.8 (share 0.5, parallel 0.0) | rhythm    11.8 (dose 0.9 when battery>=0.6)
+  skill growth 0.0, interference 0.9   solo   -32.3 | fixed     9.8 (share 0.5, parallel 0.0) | rhythm    11.8 (dose 0.9 when battery>=0.6)
+  skill growth 0.01, interference 0.2  solo   -25.8 | fixed    13.2 (share 0.5, parallel 0.0) | rhythm    14.7 (dose 0.9 when battery>=0.6)
+  skill growth 0.01, interference 0.6  solo   -25.8 | fixed    13.2 (share 0.5, parallel 0.0) | rhythm    14.7 (dose 0.9 when battery>=0.6)
+  skill growth 0.01, interference 0.9  solo   -25.8 | fixed    13.2 (share 0.5, parallel 0.0) | rhythm    14.7 (dose 0.9 when battery>=0.6)
+  skill growth 0.03, interference 0.2  solo   -18.3 | fixed    18.2 (share 0.5, parallel 0.0) | rhythm    19.0 (dose 0.9 when battery>=0.6)
+  skill growth 0.03, interference 0.6  solo   -18.3 | fixed    18.2 (share 0.5, parallel 0.0) | rhythm    19.0 (dose 0.9 when battery>=0.6)
+  skill growth 0.03, interference 0.9  solo   -18.3 | fixed    18.2 (share 0.5, parallel 0.0) | rhythm    19.0 (dose 0.9 when battery>=0.6)

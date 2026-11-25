@@ -1,0 +1,21 @@
+T1. Value of meaning (m=1 minus m=0), all mechanisms on, by stress level
+  stressor rate 0.0  gain +0.218
+  stressor rate 0.1  gain +0.276
+  stressor rate 0.2  gain +0.332
+  stressor rate 0.4  gain +0.458
+
+T2. Signatures: gain from meaning by stress level, one mechanism at a time
+                  stress 0.0   stress 0.2   stress 0.4   
+  quieting only         +0.000      +0.165      +0.336
+  attention only        +0.168      +0.168      +0.168
+  pleasure only         +0.050      +0.050      +0.050
+  exposure only         +0.000      -0.085      -0.160
+
+T3. Baumeister pattern: meaning brings more stressors but less suffering per stressor
+  meaning 0.0: value 0.077, share of periods negative 19.7%
+  meaning 1.0: value 0.409, share of periods negative 23.7%
+
+T4. Meaning vs equanimity: both lower resistance; do they substitute?
+  equanimity 0.0: gain from meaning +0.470
+  equanimity 0.5: gain from meaning +0.344
+  equanimity 0.8: gain from meaning +0.268

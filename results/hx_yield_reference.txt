@@ -1,0 +1,22 @@
+E1. Portfolio: high-floor vs high-peak (same mean yield). Mean experienced value / % periods below reference
+  adaptation phi=0.0  loss weight 1.0: high_floor  1.10/  0%        mixed  1.11/  0%    high_peak  1.10/  0%
+  adaptation phi=0.0  loss weight 2.0: high_floor  1.10/  0%        mixed  1.11/  0%    high_peak  1.10/  0%
+  adaptation phi=0.8  loss weight 1.0: high_floor  0.29/  8%        mixed  0.29/ 31%    high_peak  0.29/ 35%
+  adaptation phi=0.8  loss weight 2.0: high_floor  0.27/  8%        mixed  0.20/ 31%    high_peak  0.01/ 35%
+  adaptation phi=1.0  loss weight 1.0: high_floor  0.09/  8%        mixed  0.09/ 40%    high_peak  0.09/ 36%
+  adaptation phi=1.0  loss weight 2.0: high_floor  0.05/  8%        mixed -0.08/ 40%    high_peak -0.27/ 36%
+
+E2. Does expansion survive a moving reference point? (high-floor base)
+    mean experienced value: no expansion / with expansion / with skill source / both
+  phi=0.0    1.10    1.37    1.58    1.65
+  phi=0.5    0.60    0.73    0.87    0.90
+  phi=0.8    0.27    0.31    0.42    0.40
+  phi=1.0    0.05   -0.01    0.07    0.03
+
+E3. Relief as a floor under full adaptation (phi=1)
+  high_floor: without relief   0.05   with relief   0.45
+   high_peak: without relief  -0.27   with relief   0.13
+
+E4. Threat exploitation (opponent process): after-effect fixed vs growing
+  phi=0.0  no threat source   1.10   after-effect fixed   1.19   after-effect grows   1.33
+  phi=0.8  no threat source   0.27   after-effect fixed   0.30   after-effect grows   0.33

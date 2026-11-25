@@ -1,0 +1,29 @@
+Best policy per scenario (searching numbing share n and switch threshold)
+  S0    mu  reb |  best V n*   thr* | clean only numb only no relief
+ 8.0     0    0 |   327.0 1.0  0.1  |      215.7     327.0    -374.5
+ 8.0  0.05    0 |   275.5 1.0  0.1  |      215.7     275.5    -374.5
+ 8.0  0.15    0 |   215.7 0.0  0.25 |      215.7     215.1    -374.5
+ 8.0     0  0.3 |   215.7 0.0  0.25 |      215.7     183.9    -374.5
+ 8.0  0.05  0.3 |   215.7 0.0  0.25 |      215.7     156.2    -374.5
+ 8.0  0.15  0.3 |   215.7 0.0  0.25 |      215.7     118.5    -374.5
+
+ 3.0     0    0 |   359.5 1.0  0.1  |      276.7     359.5     -58.2
+ 3.0  0.05    0 |   316.9 1.0  0.1  |      276.7     316.9     -58.2
+ 3.0  0.15    0 |   276.7 0.0  0.25 |      276.7     261.6     -58.2
+ 3.0     0  0.3 |   276.7 0.0  0.25 |      276.7     202.8     -58.2
+ 3.0  0.05  0.3 |   276.7 0.0  0.25 |      276.7     183.9     -58.2
+ 3.0  0.15  0.3 |   276.7 0.0  0.25 |      276.7     153.4     -58.2
+
+Only numbing available (S0=8): best threshold vs no relief
+  mu=0.0  rebound=0.0  numb best=  327.0 (stop at S=0.1)  no relief= -374.5
+  mu=0.0  rebound=0.3  numb best=  183.9 (stop at S=1.0)  no relief= -374.5
+  mu=0.0  rebound=1.0  numb best=  -84.5 (stop at S=2.0)  no relief= -374.5
+  mu=0.05 rebound=0.0  numb best=  275.5 (stop at S=0.1)  no relief= -374.5
+  mu=0.05 rebound=0.3  numb best=  156.2 (stop at S=1.0)  no relief= -374.5
+  mu=0.05 rebound=1.0  numb best=  -94.8 (stop at S=2.0)  no relief= -374.5
+  mu=0.15 rebound=0.0  numb best=  215.1 (stop at S=0.1)  no relief= -374.5
+  mu=0.15 rebound=0.3  numb best=  118.5 (stop at S=1.0)  no relief= -374.5
+  mu=0.15 rebound=1.0  numb best= -101.0 (stop at S=2.0)  no relief= -374.5
+  mu=0.3  rebound=0.0  numb best=  177.2 (stop at S=0.1)  no relief= -374.5
+  mu=0.3  rebound=0.3  numb best=   88.8 (stop at S=1.0)  no relief= -374.5
+  mu=0.3  rebound=1.0  numb best= -104.0 (stop at S=2.0)  no relief= -374.5

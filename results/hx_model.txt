@@ -1,0 +1,24 @@
+P2 breadth: steady-state pleasure vs number of renewing sources
+  n=  1  P*=0.000  marginal=0.3333
+  n=  2  P*=0.333  marginal=0.1667
+  n=  3  P*=0.500  marginal=0.1000
+  n=  5  P*=0.667  marginal=0.0476
+  n= 10  P*=0.818  marginal=0.0152
+  n= 20  P*=0.905  marginal=0.0043
+  n= 50  P*=0.961  marginal=0.0008
+  n=100  P*=0.980  marginal=0.0002
+
+P1 fixed liking set, no expansion (pleasure at t=1,50,200)
+  depleting 1.000 0.548 0.300
+  renewing  1.000 0.667 0.667
+  skill     1.000 0.791 1.105
+
+P5 expected grief from losses, linear vs convex grief
+  n= 1  linear=0.0495  convex(s^2)=0.0497
+  n= 3  linear=0.0501  convex(s^2)=0.0184
+  n=10  linear=0.0500  convex(s^2)=0.0073
+
+P6 bundle vs spread (k=3 strands, lambda=2)
+  bonus=0.00  bundle=2.546  spread=2.741
+  bonus=0.05  bundle=2.691  spread=2.739
+  bonus=0.20  bundle=3.114  spread=2.740

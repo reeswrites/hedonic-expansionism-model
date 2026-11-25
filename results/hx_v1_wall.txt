@@ -1,0 +1,18 @@
+equanimity softens pain only
+  e=0.0 r=1.0  mean=0.55 near=2.9% neg=17.4% mund=-0.02 rich=1.01
+  e=0.0 r=2.0  mean=0.93 near=37.6% neg=22.1% mund=-0.17 rich=1.81
+  e=0.0 r=3.0  mean=0.38 near=20.8% neg=37.8% mund=-0.35 rich=0.95
+  e=0.0 r=4.0  mean=-0.74 near=9.3% neg=63.4% mund=-0.45 rich=-0.98
+  e=0.8 r=1.0  mean=0.74 near=3.3% neg=10.7% mund=0.39 rich=1.01
+  e=0.8 r=2.0  mean=1.32 near=40.6% neg=11.8% mund=0.58 rich=1.91
+  e=0.8 r=3.0  mean=1.35 near=41.5% neg=15.1% mund=0.68 rich=1.89
+  e=0.8 r=4.0  mean=0.74 near=26.1% neg=39.9% mund=0.72 rich=0.76
+equanimity also reduces intrusion
+  e=0.0 r=1.0  mean=0.55 near=2.9% neg=17.4% mund=-0.02 rich=1.01
+  e=0.0 r=2.0  mean=0.93 near=37.6% neg=22.1% mund=-0.17 rich=1.81
+  e=0.0 r=3.0  mean=0.38 near=20.8% neg=37.8% mund=-0.35 rich=0.95
+  e=0.0 r=4.0  mean=-0.74 near=9.3% neg=63.4% mund=-0.45 rich=-0.98
+  e=0.8 r=1.0  mean=0.78 near=3.3% neg=0.0% mund=0.50 rich=1.01
+  e=0.8 r=2.0  mean=1.41 near=42.5% neg=3.7% mund=0.72 rich=1.96
+  e=0.8 r=3.0  mean=1.79 near=59.8% neg=3.3% mund=0.92 rich=2.48
+  e=0.8 r=4.0  mean=1.85 near=61.2% neg=3.7% mund=1.07 rich=2.47

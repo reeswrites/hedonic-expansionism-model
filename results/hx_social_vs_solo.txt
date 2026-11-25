@@ -1,0 +1,39 @@
+T1. Best social share by sociability gate and kind of company (no practice)
+ gamma |          close, chosen |   not close / obligatory | solo-only V
+   0.3 | sigma*=0.0 V=  -62.4 | sigma*=0.0 V=  -62.4     |   -62.4
+   0.6 | sigma*=0.2 V=  -56.1 | sigma*=0.0 V=  -62.4     |   -62.4
+   1.0 | sigma*=0.8 V=  -10.1 | sigma*=0.6 V=  -49.3     |   -62.4
+   1.3 | sigma*=0.8 V=   -5.4 | sigma*=0.6 V=  -46.4     |   -62.4
+
+T2. Which mechanism drives the social advantage? (gamma=1, close & chosen)
+  all mechanisms on   sigma*=0.8  gain over solo=  52.3
+  without amp         sigma*=0.8  gain over solo=  48.8
+  without bundle      sigma*=0.8  gain over solo=  47.5
+  without renew       sigma*=0.8  gain over solo=  46.7
+  without learn       sigma*=0.8  gain over solo=  48.1
+  without transmit    sigma*=0.8  gain over solo=  50.8
+  without relief      sigma*=0.4  gain over solo=   5.5
+  level only (amp+bundle)                      sigma*=0.3  gain=   2.6
+  capacity only (renew+learn+transmit)         sigma*=0.3  gain=   1.8
+  baseline only (relief)                       sigma*=0.7  gain=  36.7
+  additive only, no synergy (bundle=0, amp=1)  sigma*=0.8  gain=  44.0
+
+T3. 'Solitary is good but not optimal' across people (gate gamma varies)
+  all mechanisms           some social optimal for 96.0%;  median sigma*=0.5;  range 0.0-0.8
+  no capacity mechanisms   some social optimal for 96.0%;  median sigma*=0.4;  range 0.0-0.8
+  not-close company only   some social optimal for 61.5%;  median sigma*=0.1;  range 0.0-0.7
+
+T4. Self as converter vs small additive lever (practice share z also chosen)
+  converter: best social=0.7 practice=0.1 V=   -9.0
+  additive : best social=0.6 practice=0.3 V=   -8.4
+
+T5. Sensitivity: how big is shared relief vs the level/capacity effects? (gamma=1)
+  relief=0.0   amp=1.0  bundle=0.0  sigma*=0.3 gain=   1.8
+  relief=0.0   amp=1.3  bundle=0.3  sigma*=0.4 gain=   5.5
+  relief=0.0   amp=1.6  bundle=0.6  sigma*=0.5 gain=  10.3
+  relief=0.05  amp=1.0  bundle=0.0  sigma*=0.7 gain=  20.8
+  relief=0.05  amp=1.3  bundle=0.3  sigma*=0.7 gain=  27.7
+  relief=0.05  amp=1.6  bundle=0.6  sigma*=0.8 gain=  35.2
+  relief=0.15  amp=1.0  bundle=0.0  sigma*=0.8 gain=  44.0
+  relief=0.15  amp=1.3  bundle=0.3  sigma*=0.8 gain=  52.3
+  relief=0.15  amp=1.6  bundle=0.6  sigma*=0.8 gain=  60.7

@@ -1,0 +1,35 @@
+=== starting distress S0=8.0
+  clean relief, then expand        V=  254.1  thr=0.5   [clean 9, expand 91]
+  savor (liking-driven) + clean    V=  224.7  thr=0.5   [clean 7, savor 19, expand 74]
+  savor only (no clean relief)     V=   28.6  thr=0.5   [savor 24, expand 76]
+  grab (wanting-driven)            V= -180.0  thr=0.1   [grab 100]
+  do nothing                       V= -191.6  thr=0.1   [none 100]
+
+=== starting distress S0=3.0
+  clean relief, then expand        V=  315.2  thr=0.5   [clean 6, expand 94]
+  savor (liking-driven) + clean    V=  314.5  thr=1     [clean 3, savor 18, expand 79]
+  savor only (no clean relief)     V=  282.4  thr=0.5   [savor 20, expand 80]
+  grab (wanting-driven)            V=  196.2  thr=2     [grab 3, expand 97]
+  do nothing                       V=  -55.7  thr=0.1   [none 100]
+
+Grab vs alternatives as wanting sensitization varies (S0=8)
+  urge growth=0.0  liking depletion=0.0  grab V= -113.2 uses= 21  (clean-first 254.1, nothing -191.6)
+  urge growth=0.0  liking depletion=0.05 grab V= -114.2 uses= 21  (clean-first 254.1, nothing -191.6)
+  urge growth=0.0  liking depletion=0.15 grab V= -115.9 uses= 21  (clean-first 254.1, nothing -191.6)
+  urge growth=0.15 liking depletion=0.0  grab V= -179.2 uses=100  (clean-first 254.1, nothing -191.6)
+  urge growth=0.15 liking depletion=0.05 grab V= -180.0 uses=100  (clean-first 254.1, nothing -191.6)
+  urge growth=0.15 liking depletion=0.15 grab V= -181.2 uses=100  (clean-first 254.1, nothing -191.6)
+  urge growth=0.3  liking depletion=0.0  grab V= -179.2 uses=100  (clean-first 254.1, nothing -191.6)
+  urge growth=0.3  liking depletion=0.05 grab V= -180.0 uses=100  (clean-first 254.1, nothing -191.6)
+  urge growth=0.3  liking depletion=0.15 grab V= -181.2 uses=100  (clean-first 254.1, nothing -191.6)
+  urge growth=0.6  liking depletion=0.0  grab V= -179.2 uses=100  (clean-first 254.1, nothing -191.6)
+  urge growth=0.6  liking depletion=0.05 grab V= -180.0 uses=100  (clean-first 254.1, nothing -191.6)
+  urge growth=0.6  liking depletion=0.15 grab V= -181.2 uses=100  (clean-first 254.1, nothing -191.6)
+S0=8.0: three-phase best V=263.1 (clean above S=1, savor down to 1) {'clean': 7, 'savor': 16, 'grab': 0, 'expand': 77, 'none': 0} | clean-first 254.1
+S0=3.0: three-phase best V=324.4 (clean above S=1, savor down to 1) {'clean': 4, 'savor': 16, 'grab': 0, 'expand': 80, 'none': 0} | clean-first 315.2
+
+Grab with each wanting feature switched on in turn (S0=8, best threshold)
+  ignores freshness only     V= -103.1 uses=20
+  + liking depletes          V= -105.5 uses=21
+  + attention narrows        V= -114.2 uses=21
+  + urge grows (full)        V= -180.0 uses=100

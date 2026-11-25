@@ -1,0 +1,78 @@
+Q1  expertise in music (e=0, c=0): expert-domain valence / %neg
+cells: valence / %neg / pos-part (how strongly liked features register)
+x     r     k     clarity-only            +categorizing           +cat+judging
+0     1     0.00   1.38/ 0.0%/1.38    1.38/ 0.0%/1.38    1.33/ 0.0%/1.33
+0.25  1.75  0.15   2.12/ 0.0%/2.17    1.91/ 0.0%/1.97    1.83/ 0.0%/1.92
+0.5   2.5   0.30   2.09/ 0.0%/2.55    1.70/ 3.2%/2.16    0.69/29.9%/1.73
+0.75  3.25  0.45   0.64/26.6%/2.16    0.06/53.2%/1.58   -1.42/82.2%/0.82
+1.0   4.0   0.60  -1.42/70.0%/0.95   -1.79/83.3%/0.58   -2.65/96.7%/0.11
+
+Q2  full expertise, judging on. Novice reference (x=0,e=0,c=0): val 1.33, near 10.2%, neg 0.0%
+c     e     val    near   neg
+0     0     -2.65   0.0%  96.7%
+0     0.5    0.60  16.7%  31.8%
+0     0.8    1.76  46.8%   0.0%
+0.5   0     -2.59   0.0%  96.7%
+0.5   0.5    1.18  26.8%  10.0%
+0.5   0.8    2.36  86.7%   0.0%
+1     0     -2.55   3.3%  96.7%
+1     0.5    1.46  43.4%  10.0%
+1     0.8    2.59  100.0%   0.0%
+
+Q3  dissociation at expertise x=0.75 (expert domain)
+profile              val   inten  %neg   pos-part  pain-part
+neither  e0 c0       -1.42   1.71  82.2%    0.82      2.24
+calm-dull e.8 c0      2.19   2.19   0.0%    2.28      0.09
+vivid    e0 c1       -1.01   1.60  76.7%    1.23      2.24
+both     e.8 c1       2.72   2.72   0.0%    2.81      0.09
+
+Q3  dissociation at expertise x=1.0 (expert domain)
+profile              val   inten  %neg   pos-part  pain-part
+neither  e0 c0       -2.65   2.71  96.7%    0.11      2.76
+calm-dull e.8 c0      1.76   1.76   0.0%    2.00      0.25
+vivid    e0 c1       -2.55   2.68  96.7%    0.21      2.76
+both     e.8 c1       2.59   2.59   0.0%    2.84      0.25
+
+Q4  sampling width vs effective liking of top/bottom deciles (music, r=R, e=0)
+mode  width   top-decile  bottom-decile  spread
+best  none      2.97       -1.44         4.41
+best  0.2       3.21       -1.65         4.85
+best  0.5       3.16       -1.69         4.85
+best  1.0       2.91       -1.95         4.85
+mean  none      2.97       -1.44         4.41
+mean  0.2       3.23       -1.63         4.85
+mean  0.5       3.22       -1.63         4.85
+mean  1.0       3.21       -1.64         4.85
+range none      2.97       -1.44         4.41
+range 0.2       2.99       -1.45         4.44
+range 0.5       3.02       -1.47         4.49
+range 1.0       3.21       -1.64         4.85
+
+Q5  training paths (skills rise with t in all domains; judging on)
+t     path              mean   rich   mund   %neg
+0     clarity only       0.44   0.97  -0.22  22.9%
+0     clarity+release    0.44   0.97  -0.22  22.9%
+0     clarity+equanim    0.44   0.97  -0.22  22.9%
+0     clarity+both       0.44   0.97  -0.22  22.9%
+
+0.33  clarity only       0.46   1.28  -0.58  33.4%
+0.33  clarity+release    0.53   1.38  -0.54  31.4%
+0.33  clarity+equanim    0.91   1.60   0.05  16.6%
+0.33  clarity+both       0.98   1.69   0.10  15.9%
+
+0.67  clarity only      -1.01  -0.95  -1.09  74.0%
+0.67  clarity+release   -0.78  -0.69  -0.90  68.3%
+0.67  clarity+equanim    1.01   1.63   0.24  17.7%
+0.67  clarity+both       1.34   2.05   0.46  13.0%
+
+1.0   clarity only      -1.97  -2.41  -1.43  90.3%
+1.0   clarity+release   -1.66  -2.18  -1.01  83.0%
+1.0   clarity+equanim    1.03   1.49   0.46   5.7%
+1.0   clarity+both       1.82   2.44   1.05   3.7%
+
+
+Judging-slope sensitivity (x=1, e=0.8): JS  c=0 val  c=1 val
+  0.0    1.84    2.64
+  0.1    1.76    2.59
+  0.2    1.62    2.50
+  0.3    1.49    2.41

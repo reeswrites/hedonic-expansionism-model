@@ -1,0 +1,106 @@
+Combined model: do the headline results survive when the mechanisms interact?
+{'T': 300, 'SLOTS': 3, 'LAM': 2.0, 'LOSS': 2.0, 'K_REF': 0.03, 'REC': 0.25, 'SPILL': 0.5, 'MOTF': 2.0, 'GS': 0.3, 'FADE': 0.05, 'INFLOW': 0.02, 'SHOCK_P': 0.03, 'SHOCK': (0.5, 2.0), 'RHO_C': 0.15, 'RHO_P': 0.1, 'RHO_N': 0.3, 'MU': 0.05, 'PSI': 0.05, 'REB': 0.15, 'BUILD': 0.3, 'CAPT': 0.15, 'K0': 0.6, 'X0': 0.5, 'COMP': 0.15, 'ANT': 0.1, 'ETA': 0.5, 'WDECAY': 0.1, 'SENS0': 0.1, 'AMP': 1.3, 'BUNDLE': 0.4, 'AUT': 0.3, 'GROW': 0.08, 'CDECAY': 0.01, 'RHO_SH': 0.15, 'RHO_AL': 0.03, 'CONFLICT': 0.03, 'IMPORT': 0.027, 'Q': 0.004, 'GRIEF': 10.0, 'DRAIN': 0.25, 'RECH': 0.25, 'B_LOW': 0.3, 'OVER': 0.6, 'GAMMA': 1.0, 'ACQ_A': 2.0, 'ACQ_SIG': 4.38, 'ACQ_a': 0.052, 'ACQ_L0': -0.5, 'ACQ_N': 60, 'C0': 0.8, 'LP': 10.0} 
+
+1. Breadth vs ceiling: n sensory sources (distinct profiles), liking-driven
+   n   mean V   p95 V   loss over t150-170 from losing the favourite at t150 (paired)
+   2     1.562   2.209   +0.127
+   4     1.609   2.262   +0.060
+   8     1.646   2.302   +0.032
+   16    1.647   2.304   +0.028
+
+2. Equanimity vs concept release, liking-driven; ordinary vs chronic distress (inflow 0.3)
+   [ordinary] static, full expertise x=1: e0/cr0 1.704  e0.8/cr0 1.971  e0/cr1 3.393  e0.8/cr1 3.938
+   [ordinary] practice every 2nd period t<200, V t200-300: None: 2.346 (e0.00 cr0.00)  E: 2.702 (e0.76 cr0.00)  C: 3.241 (e0.00 cr0.84)  EC: 3.329 (e0.50 cr0.64)  CE: 3.210 (e0.61 cr0.51)
+   [chronic] static, full expertise x=1: e0/cr0 0.691  e0.8/cr0 1.394  e0/cr1 1.313  e0.8/cr1 2.928
+   [chronic] practice every 2nd period t<200, V t200-300: None: 0.798 (e0.00 cr0.00)  E: 1.743 (e0.69 cr0.00)  C: 1.165 (e0.00 cr0.77)  EC: 1.773 (e0.50 cr0.48)  CE: 1.875 (e0.49 cr0.50)
+
+3. Relief from S0=6 (mean V over t0-150; best threshold per policy)
+   no relief                              V=  1.791  thr=None expand<=None
+   fixed 1 slot                           V=  1.808  thr=None expand<=None
+   gate (all-or-none)                     V=  2.230  thr=1 expand<=None
+   gradient (share rises w/ S)            V=  2.236  thr=1 expand<=None
+   two-phase: relieve, then expand        V=  2.230  thr=1 expand<=1
+   three-phase: relieve, savor, expand    V=  2.225  thr=1 expand<=0.5
+
+4. Habitual numbing when suffering fades (S0=6, no shocks, no clean relief); mean V t0-150
+   nothing (ordinary pleasures only)    V=  1.202  numb uses=  0.0  final S=0.19
+   bridge: numb first 2 periods only    V=  1.388  numb uses=  2.0  final S=0.19
+   habit: numb if S>0.5 or urge>1       V= -0.443  numb uses=300.0  final S=0.77
+   habit: numb if S>2 or urge>1         V=  1.407  numb uses=  3.0  final S=0.19
+
+5. Urge surfing: probability pi that the urge steers (salience biased, feed present)
+   pi=1.0   V=  1.197  skill+sensitizing uses=  1.8
+   pi=0.75  V=  1.388  skill+sensitizing uses=143.9
+   pi=0.5   V=  1.626  skill+sensitizing uses=235.1
+   pi=0.25  V=  1.982  skill+sensitizing uses=292.6
+   pi=0.0   V=  2.314  skill+sensitizing uses=419.5
+   Underuse decomposition at pi=1 (uses of skill+sensitizing; V):
+   flat salience                      uses=  5.1 (recovers    1% of gap; liking-driven 420, urge 2) V=1.283
+   wanting habituates 1x              uses=  0.0 (recovers   -0% of gap; liking-driven 420, urge 2) V=1.168
+   no sensitization                   uses= 98.1 (recovers   23% of gap; liking-driven 420, urge 2) V=1.535
+   flat salience + no sensitization   uses=240.6 (recovers   57% of gap; liking-driven 420, urge 2) V=1.828
+   no feed in the world               uses= 39.4 (recovers    9% of gap; liking-driven 420, urge 2) V=1.569
+
+6. Acquired taste (K=2, l0=-0.5, 60 planned exposures, then free choice); 20 seeds
+   massed: 3 per period         P(kept trying)=  0%  quit at exposure  14.7  rested liking at end +0.82  V=1.567
+   spaced: 1 every 3 periods    P(kept trying)= 35%  quit at exposure   1.5  rested liking at end +0.25  V=1.676
+   spaced, distressed (S0=5)    P(kept trying)=  0%  quit at exposure   1.0  rested liking at end -0.40  V=1.535
+   widely spaced: every 8       P(kept trying)= 25%  quit at exposure   1.6  rested liking at end +0.33  V=1.629
+
+7. Broad social vs broad solo (8 solo sources; social plan k slots/period when battery>=0.4)
+   average                solo  2.195 | social by #people 1:2.377 2:2.509 3:2.496 4:2.489 6:2.485 12:2.464 | best 2
+   low sociability        solo  2.195 | social by #people 1:1.979 2:1.942 3:1.938 4:1.963 6:1.973 12:1.933 | best 1
+   solitude is my relief  solo  2.267 | social by #people 1:2.276 2:2.241 3:2.249 4:2.248 6:2.262 12:2.224 | best 1
+
+8. Pairs (simplified: 12 joint activities, taste overlap 0, mudita 0.5, learning 0.05)
+   solo 0.979  compromise 2.113  turns 2.266  overlap 2.242
+
+9. Which expansions last: add one source at t=100 to a world without skill/sensitizing
+   material     early +0.390  late +0.212  kept   54%
+   sensory      early +0.090  late +0.067  kept   75%
+   social       early +0.160  late +0.204  kept  128%
+   skill        early +0.595  late +0.714  kept  120%
+   relief       early +0.241  late +0.293  kept  122%
+   sensitizing  early +0.594  late +0.582  kept   98%
+
+10. Arousal x equanimity (liking-driven, standard world)
+   a=0.2: e=0 1.714  e=0.8 2.063  equanimity gain +0.349
+   a=0.5: e=0 2.314  e=0.8 2.715  equanimity gain +0.401
+   a=0.8: e=0 1.618  e=0.8 2.042  equanimity gain +0.424
+
+11. Feeds (urge steers 80%): share of slots, felt yield per use, cached wanting vs liking
+   pi=0.8: feed share  33%, feed yield 0.157 vs other uses 0.623, feed wanting 2.72, competence from feed 0; V with feed 1.329 vs without 1.963
+   pi=0.0: feed share   0%, feed yield 0.000 vs other uses 0.756, feed wanting 0.80, competence from feed 0; V with feed 2.314 vs without 2.314
+
+LIVES (10 seeds, mean V per period over all 300 periods; and t200-300)
+   default      -0.602  late -0.668
+   expansionist 2.568  late 2.661  gap +3.170 (late +3.329)
+   default with no numbing source in its world 1.201  gap +1.367
+   Ablation: revert one component of the expansionist life to default (loss of V; share of gap)
+   choice (urge steers)               2.331  loss +0.237  (   7%)
+   attention mode (background)        2.503  loss +0.065  (   2%)
+   arousal (high)                     2.059  loss +0.509  (  16%)
+   practice (no equanimity/release)   2.530  loss +0.038  (   1%)
+   relief policy (no gradient)        2.594  loss -0.026  (  -1%)
+   numbing + feed allowed             1.497  loss +1.071  (  34%)
+   social (1 person, unplanned)       2.586  loss -0.018  (  -1%)
+   acquired taste massed              2.603  loss -0.036  (  -1%)
+   no skill/sensitizing plan          2.697  loss -0.130  (  -4%)
+   Add one component to the default life (gain)
+   + urge surfing pi=0.1              gain +0.290
+   + focused mode                     gain +0.012
+   + moderate arousal                 gain +0.190
+   + ban numbing+feed                 gain +2.223
+   + 3 people, planned                gain +0.380
+   Mechanism ablation (switched off in both lives): default / expansionist / gap
+   none (full model)               -0.602   2.568  gap +3.170
+   reference points (phi=0)        -0.360   3.114  gap +3.474
+   loss weight (LOSS=LAM=1)         0.065   2.742  gap +2.677
+   distress numbing (g=1)          -0.465   2.856  gap +3.322
+   attention capture               -0.578   2.701  gap +3.279
+   categorizing dulling            -1.101   3.860  gap +4.961
+   numbing rebound                  1.653   2.568  gap +0.915
+   competence                      -0.652   2.136  gap +2.789
+   anticipation                    -0.602   2.425  gap +3.027
+   convex grief                    -0.601   2.598  gap +3.199
+   sensitization                   -0.409   2.568  gap +2.977

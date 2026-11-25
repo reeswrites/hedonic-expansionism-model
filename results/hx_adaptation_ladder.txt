@@ -1,0 +1,69 @@
+Adaptation ladder: several clocks of hedonic adaptation instead of one dial.
+T=400, slots=2, seeds=20, LOSS=2.0, K_REF=0.03, phi={'material': 0.95, 'sensory': 0.5, 'social': 0.3, 'skill': 0.3, 'sensitizing': 0.2, 'relief': 0.0}
+
+E1. Which expansions survive adaptation? Add one source of a kind at t=100.
+    gain in mean experienced value per period vs no addition (20 paired seeds)
+    kind         t 100-200 t 300-400   kept
+    material         0.235     0.032    14%
+    sensory          0.058     0.030    52%
+    social           0.230     0.101    44%
+    skill            0.358     0.626   175%
+    relief           0.166     0.182   110%
+    sensitizing      0.379     0.417   110%
+
+E2. Exposure mode: music-like sensory item X scheduled into a slot every period
+    mean value t100-400 / X mean yield per use (last 50) / X freshness h (last 50)
+    focused/chosen/continuous             0.848   0.532   0.69
+    focused/chosen/interrupted            0.907   0.668   0.79
+    focused/forced/continuous             0.817   0.460   0.60
+    focused/forced/interrupted            0.879   0.604   0.71
+    background/chosen/continuous          0.758   0.327   0.85
+    background/chosen/interrupted         0.783   0.383   0.90
+    background/forced/continuous          0.748   0.303   0.79
+    background/forced/interrupted         0.775   0.365   0.86
+
+E3. Four sensory items (liking 1.0), nothing else; mean value t100-400 / mean h
+    one shared profile   policy=greedy   0.367   0.48
+    one shared profile   policy=log      0.367   0.48
+    four profiles        policy=greedy   0.592   0.65
+    four profiles        policy=log      0.592   0.65
+
+E4. Schedules for one favourite X (other slot(s) greedy; X never picked off-schedule)
+    mean value t100-400 and X uses
+    schedule                       X=sensory  uses  X=sensitizing  uses
+    fixed: every period                0.848   400          1.388   400
+    fixed: every other period          0.835   200          1.126   200
+    oscillate 3 on / 3 off             0.821   201          1.115   201
+    oscillate 8 on / 8 off             0.832   200          1.090   200
+    oscillate 20 on / 20 off           0.827   200          1.066   200
+    adaptive (greedy picks X)          0.861   164          1.386   373
+
+E5. Wanting-driven vs liking-driven choice; base + skill (starts 0.5) + sensitizing
+    value t100-400, then uses of skill/sensitizing (of 800 slots).
+    greedy = true current liking*freshness (myopic); log = liking log + gap-based freshness
+    condition                                   greedy         wanting             log
+    salience biased, wanting 2x fast     1.386   0/373   1.301   3/326   1.336 147/116
+    salience flat,   wanting 2x fast     1.386   0/373   1.589 143/343   1.336 147/116
+    salience flat,   wanting 1x (ctl)    1.386   0/373   1.380   1/384   1.336 147/116
+    salience biased, wanting 1x          1.386   0/373   1.291   0/297   1.336 147/116
+
+E6. Sensitivity: E1 late gain (t 300-400) as phi varies
+    phi_material      material   sensory    social     skill
+    0.3                  0.434     0.030     0.101     0.626
+    0.6                  0.249     0.030     0.101     0.626
+    0.8                  0.125     0.030     0.101     0.626
+    0.95                 0.032     0.030     0.101     0.626
+    1.0                 -0.008     0.030     0.101     0.626
+    phi_social=skill  material   sensory    social     skill
+    0.3                  0.032     0.030     0.101     0.626
+    0.5                  0.032     0.050     0.053     0.426
+    0.7                  0.031     0.070     0.005     0.227
+    1.0                  0.031     0.100    -0.081    -0.146
+    phi_sensory       material   sensory    social     skill
+    0.3                  0.032     0.065     0.079     0.567
+    0.8                  0.032    -0.022     0.136     0.717
+    1.0                  0.031    -0.067     0.168     0.790
+
+E7. Calibrated adaptation: E1 gain from adding one source (early t100-200 / late t300-400)
+  social as circumstance: material +0.262/+0.062  sensory +0.117/+0.090  social -0.025/-0.046  skill +0.474/+0.914  relief +0.216/+0.213  sensitizing +0.467/+0.529
+  social as varied activity: material +0.261/+0.063  sensory +0.048/+0.020  social +0.272/+0.125  skill +0.394/+0.785  relief +0.158/+0.176  sensitizing +0.365/+0.399

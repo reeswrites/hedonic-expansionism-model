@@ -1,0 +1,64 @@
+1. Compersion threshold kappa* = (R + dq*L + appraisal)/G   (G=2, r=0.2)
+   case                          R      dq*L   kappa*
+   unprotected slot, dq=.02       1.50  0.138   0.82
+   protected slot,   dq=.02       0.78  0.138   0.46
+   protected slot,   dq=.005      0.78  0.035   0.41
+   protected, dq=.005, appr=.5    0.78  0.035   0.66
+   unprotected, dq=.05            1.50  0.345   0.92
+   bundle-beats-spread needs b > 0.067 at q=0.05 (k=3)
+   bundle-beats-spread needs b > 0.093 at q=0.07 (k=3)
+   bundle-beats-spread needs b > 0.133 at q=0.10 (k=3)
+
+2a. Vicarious pleasure from m people, fixed attention A=1, vicarious habituates
+   m=  1  V=0.000   E[grief share^2], q=.05: 0.0500
+   m=  2  V=0.333   E[grief share^2], q=.05: 0.0263
+   m=  3  V=0.500   E[grief share^2], q=.05: 0.0183
+   m=  5  V=0.667   E[grief share^2], q=.05: 0.0120
+   m= 10  V=0.818   E[grief share^2], q=.05: 0.0073
+   m= 30  V=0.935   E[grief share^2], q=.05: 0.0041
+   m=100  V=0.980   E[grief share^2], q=.05: 0.0030
+2b. Widening the circle: net per added person = a*(kappa*G - lam*eta*S)
+   eta/kappa=1.0 cumulative (5/rung, attention unbounded): +1.80 +3.30 +4.50 +4.80 +4.50 +3.30
+   eta/kappa=0.3 cumulative (5/rung, attention unbounded): +2.64 +5.19 +7.65 +9.42 +10.80 +11.70
+   eta/kappa=0.0 cumulative (5/rung, attention unbounded): +3.00 +6.00 +9.00 +11.40 +13.50 +15.30
+
+3. Taste transmission A->B->C, A-B ends at t=40
+   theta  B@39   B@42(test early)  B@80(test late)  ratio_late  C@end
+    0.0  0.964  0.099             0.000            0.00        0.000
+    0.3  0.964  0.156             0.289            0.30        0.289
+    0.7  0.964  0.232             0.675            0.70        0.675
+    1.0  0.964  0.289             0.964            1.00        0.964
+
+4. Multi-agent (n=12, 6 couples + ring of friends, 300 periods, 20 seeds)
+   scenario                     own   experienced  gini_exp  taken  vetoed  taste
+  [veto]
+   all k=0                      2.98    2.98       0.024        0    464  0.90
+   all k=0.3                    2.98    3.89       0.019        0    464  0.90
+   all k=0.6                    2.89    4.68       0.026      336    114  0.87
+   mixed 0/.3/.6                2.95    3.86       0.104      116    341  0.88
+   all k=-0.3 (envy)            2.98    2.07       0.036        0    464  0.90
+   mixed with 4 envious         2.95    3.56       0.169      116    341  0.88
+  [no veto]
+   all k=0                      2.85    2.78       0.042      452      0  0.86
+   all k=0.3                    2.85    3.70       0.031      452      0  0.86
+   all k=0.6                    2.85    4.62       0.025      452      0  0.86
+   mixed 0/.3/.6                2.85    3.70       0.116      452      0  0.86
+   all k=-0.3 (envy)            2.85    1.86       0.065      452      0  0.86
+   mixed with 4 envious         2.85    3.40       0.187      452      0  0.86
+  [veto+protect+security]
+   all k=0                      2.98    2.98       0.024        0    518  0.90
+   all k=0.3                    3.01    3.92       0.021       69    448  0.90
+   all k=0.6                    3.05    4.92       0.020      477     35  0.88
+   mixed 0/.3/.6                3.02    3.95       0.103      185    331  0.89
+   all k=-0.3 (envy)            2.98    2.07       0.036        0    518  0.90
+   mixed with 4 envious         3.02    3.65       0.167      185    331  0.89
+  [no veto+protect+security]
+   all k=0                      3.04    2.97       0.033      512      0  0.88
+   all k=0.3                    3.04    3.94       0.025      512      0  0.88
+   all k=0.6                    3.04    4.91       0.021      512      0  0.88
+   mixed 0/.3/.6                3.04    3.94       0.116      512      0  0.88
+   all k=-0.3 (envy)            3.04    2.00       0.050      512      0  0.88
+   mixed with 4 envious         3.04    3.62       0.186      512      0  0.88
+  [eta/kappa = 0.3, no veto+protect+security]
+   all k=0.6                    3.04    4.95
+   all k=-0.3 (envy)            3.04    1.98

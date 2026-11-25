@@ -1,0 +1,58 @@
+=== 1. b*(gamma), f(s)=s^gamma, q=.05 k=3 lam=2  (bundle wins iff b > b*)
+ gamma        b*  MC(bundle-spread) at b=b*+.01               E f(X/n) n=1,3,10,30
+   0.5   -0.0718                         0.0349   0.0500 0.0841 0.1394 0.1918
+     1    0.0000                         0.0341   0.0500 0.0500 0.0500 0.0500
+   1.5    0.0420                         0.0336   0.0500 0.0301 0.0186 0.0139
+     2    0.0667                         0.0333   0.0500 0.0183 0.0072 0.0041
+     3    0.0900                         0.0330   0.0500 0.0072 0.0013 0.0004
+closed form check gamma=2: lam*q*(k-1)/k = 0.06666666666666667
+
+--- mixed grief f(s) = w*sqrt(s) + (1-w)*s^3 (concave small, convex large)
+    w  b*(k=3)   argmin_n E f(X/n), n<=40  rare-loss n~1/argmin f(s)/s
+  0.0   0.0900                         40                      10000.0
+ 0.02   0.0868                         13                          8.3
+ 0.05   0.0819                          7                          5.7
+  0.1   0.0738                          5                          4.2
+  0.2   0.0576                          3                          3.0
+  0.5   0.0091                          2                          1.7
+
+--- logistic S-curve f(s)=(sig(c(s-m))-sig(-cm))/(sig(c(1-m))-sig(-cm)), m=.3
+  c= 4  b*=-0.0282  best n=1  E f: n=1 0.0500 n=3 0.0634 n=10 0.0571 n=40 0.0539
+  c= 8  b*=-0.0600  best n=40  E f: n=1 0.0500 n=3 0.0785 n=10 0.0533 n=40 0.0429
+  c=16  b*=-0.0887  best n=40  E f: n=1 0.0500 n=3 0.0921 n=10 0.0279 n=40 0.0130
+
+=== 3. growing rebound r_t=r0*a_t, a'=(1-eps)a+g*used.  TH*C=1.030
+lock-in check (habit, S0=8, shocks +3.0 every 10): loop permanent iff r0*g/eps > TH*C
+  r0    g   eps r0g/eps perm? uses/150  a_end g/eps m_min first t of last unbroken run
+ 0.5    1     1    0.50 False       31   0.00  1.00     1                         None
+ 1.2    1     1    1.20  True      150   1.00  1.00   inf                            0
+ 0.5  0.3   0.3    0.50 False       31   0.03  1.00     1                         None
+ 0.5  0.3  0.05    3.00  True      105   5.95  6.00     4                           60
+ 0.5  0.2  0.03    3.33  True       83   5.86  6.67     4                           90
+ 0.6  0.6   0.2    1.80  True      150   3.00  3.00     2                            0
+
+value, S0=8 (no clean relief | with clean relief available)
+  r0    g   eps m_min | nothing   habit    stop  spaced  sp m=1 |   clean   habit    stop  spaced
+ 0.5    1     1     1 |  -400.7   -40.3   -40.3   -40.3   -40.3 |    14.1   -40.3   -40.3   -40.3
+ 1.2    1     1   inf |  -400.7  -149.5  -400.7  -328.5  -149.5 |    14.1  -149.5    14.1     7.1
+ 0.5  0.3   0.3     1 |  -400.7    -5.3    -5.3    -5.3    -5.3 |    14.1    -5.3    -5.3    -5.3
+ 0.5  0.3  0.05     4 |  -400.7   -81.3   -59.6   -69.1   -81.3 |    14.1   -81.3   -48.5    -4.6
+ 0.5  0.2  0.03     4 |  -400.7   -49.0   -41.6   -61.3   -49.0 |    14.1   -49.0   -37.4    -0.9
+ 0.6  0.6   0.2     2 |  -400.7  -186.8   -81.0   -64.8  -186.8 |    14.1  -186.8   -65.1   -17.6
+
+spacing sweep r0=.5 g=.3 eps=.05 (m_min=4): m, V(no clean), V(clean fallback), uses, a*(m)
+  m= 1 V=  -81.3 Vclean=  -81.3 uses=105 a*(m)=6.00  r0*a*=3.00
+  m= 2 V=  -58.3 Vclean=  -12.4 uses= 42 a*(m)=3.08  r0*a*=1.54
+  m= 3 V=  -61.7 Vclean=  -10.1 uses= 30 a*(m)=2.10  r0*a*=1.05
+  m= 4 V=  -69.1 Vclean=   -4.6 uses= 30 a*(m)=1.62  r0*a*=0.81
+  m= 6 V= -104.8 Vclean=   -4.6 uses= 25 a*(m)=1.13  r0*a*=0.57
+  m=10 V=  -87.8 Vclean=   -4.6 uses= 15 a*(m)=0.75  r0*a*=0.37
+  m=20 V= -175.0 Vclean=    9.9 uses=  8 a*(m)=0.47  r0*a*=0.23
+
+=== 2. soft bottleneck: h(x)=x^beta within each action (beta=1 is old linear)
+old threshold S*(L=1) = 0.64  (R=MR/ME=1 there)
+ beta | x*(S) greedy closed form at S=0.50 1.00 0.64 3.00 5.00 8.00 | DP x*(t=0,L=1) same S | V(S0=8): opt  greedy  bangbang | V(S0=3)
+  1.0 | 0.00 1.00 1.00 1.00 1.00 1.00 | 1.00 1.00 1.00 1.00 1.00 1.00 |  139.0  130.8  130.8 |  180.2  171.1  171.1 | DP monotone violations 0, DP x*=1/2 at S=0.25
+  0.9 | 0.04 1.00 0.50 1.00 1.00 1.00 | 0.95 1.00 0.95 1.00 1.00 1.00 |  140.3  134.5  130.8 |  181.9  175.6  171.1 | DP monotone violations 1, DP x*=1/2 at S=0.50
+  0.7 | 0.27 0.89 0.50 1.00 1.00 1.00 | 0.40 0.70 0.45 0.95 1.00 1.00 |  153.0  151.8  130.8 |  195.8  194.5  171.1 | DP monotone violations 0, DP x*=1/2 at S=0.75
+  0.5 | 0.35 0.78 0.50 1.00 1.00 1.00 | 0.30 0.55 0.35 0.90 0.95 1.00 |  166.7  167.2  130.8 |  210.8  211.2  171.1 | DP monotone violations 0, DP x*=1/2 at S=0.88
