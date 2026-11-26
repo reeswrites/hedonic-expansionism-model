@@ -5,9 +5,10 @@ choosing by predicted liking: an ideal chooser, not an equanimous one. Contempla
 pair less craving with two further changes that pull in opposite directions:
   flatten  equanimity (upekkha) evens out liking: each felt yield is pulled toward the agent's
            running average of unflattened yield, y' = (1 - f) y + f ybar. Highs drop and lows
-           (and shortfalls against the reference) rise. Because this keeps the ranking of
-           options, it leaves choices unchanged; E4 adds the stronger version, where
-           indifference also makes choice careless (a random pick with probability f).
+           (and shortfalls against the reference) rise. It does shift choices somewhat: relief is
+           exempt, and curiosity and social-battery terms are added after flattening, so
+           they weigh relatively more. E4 adds the stronger version, where indifference
+           also makes choice careless (a random pick with probability f).
   vivid    the jhana-teacher claim: with less grasping, liking itself is more vivid;
            positive felt yields are multiplied by (1 + v).
   calm     the model's existing equanimity e: distress is felt and captures attention less.

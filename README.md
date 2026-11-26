@@ -32,15 +32,15 @@ This repository contains:
 
 ## What the models suggest
 
-How sure each one is: **proved** means it follows mathematically from the model's assumptions; **simulated** means it showed up in simulations with made-up numbers; **research-backed** means published studies point the same way. None of this has been tested on real people as a whole, so treat the "try" lines as experiments, not advice. Details are in [docs/theory.md](docs/theory.md).
+What kind of claim each one is (true for all values, true when one term outweighs another, or true only in some settings) is in [docs/claim_types.md](docs/claim_types.md). How sure each one is: **proved** means it follows mathematically from the model's assumptions; **simulated** means it showed up in simulations with made-up numbers; **research-backed** means published studies point the same way. None of this has been tested on real people as a whole, so treat the "try" lines as experiments, not advice. Details are in [docs/theory.md](docs/theory.md).
 
 1. **Variety is a safety net, not an endless boost.**
-   - Time is limited, so more favorites don't keep raising how good life feels; variety buys resilience when you lose one, and time for each favorite to feel fresh again.
+   - Time is limited, so each extra favorite adds less and less to how good life feels; variety buys resilience when you lose one, and time for each favorite to feel fresh again.
    - **Try:** keep a few unrelated sources of enjoyment, so losing one doesn't take the others with it.
    - **Exception:** only holds if bigger losses hurt more than proportionally; if not, putting more into one deep thing can be better.
    - *Proved.*
-2. **Noticing more only pays if you stay calm.**
-   - Finer attention reveals more to enjoy and more to dislike; experts who grade everything feel *less*.
+2. **Noticing more only pays if dislikes don't grab your attention.**
+   - Finer attention reveals more to enjoy and more to dislike; experts who grade everything feel *less*. What protects you is calm that keeps unpleasant details from capturing attention, not just softening them; when the unpleasant parts are mild, noticing more pays even without calm.
    - **Try:** when you're getting into something, notice details without scoring them; pair it with a regular calm practice.
    - **Exception:** practicing only when things are bad didn't pay in the model; the gains need steady practice.
    - *Proved for a single moment; simulated over time; research-backed.*
@@ -50,7 +50,7 @@ How sure each one is: **proved** means it follows mathematically from the model'
    - **Exception:** if relief isn't possible (e.g. chronic pain), lean into enjoyment anyway; the exact split matters less than doing some of each.
    - *Proved under its assumptions.*
 4. **Numbing is fine as a bridge, dangerous as a habit.**
-   - Occasional escape can help; habitual escape can lock into a loop that leaves you worse off than doing nothing.
+   - Occasional escape can help; habitual escape can lock into a loop, which can leave you worse off than doing nothing when the distress would have faded on its own. As a bridge it only helps if it relieves faster than clean relief (rest, support) would.
    - **Try:** before reaching for an escape, ask "joy, or only relief?" and set a stopping point; keep feeds out of default slots.
    - **Exception:** a short escape during acute distress came out ahead in the model; the danger is the automatic, repeated version.
    - *Proved and simulated.*
@@ -71,21 +71,21 @@ How sure each one is: **proved** means it follows mathematically from the model'
    - **Try:** when choosing between buying something and starting something, lean toward starting; keep regular pleasures like touch and exercise regular.
    - **Exception:** status and some circumstances (long commutes, noise) don't adapt away, for better or worse; purchases that enable an activity count as the activity.
    - *Simulated, calibrated from the adaptation research.*
-8. **A few close, chosen people beat a broad solo life for most people.**
+8. **A few close, chosen people beat a broad solo life, when company multiplies enjoyment.**
    - The benefit is mostly shared relief; between two people, taking turns with each other's favorites beats compromising on something neither loves.
    - **Try:** invest in two to four close ties rather than many shallow ones; alternate who picks what you do together.
    - **Exception:** for people who recharge alone or find company draining, solitude is the better life; obligatory company is worth much less than chosen company.
-   - *Simulated; partly research-backed.*
+   - *Simulated; partly research-backed. Holds in only about half of nearby settings: when company makes things roughly 1.5–2× more enjoyable than alone, or shared relief far exceeds relief alone.*
 9. **Calm beats keyed-up.**
    - Arousal amplifies whatever already has your attention, good or bad; calm pleasures last longer than exciting ones.
    - **Try:** aim for moderate arousal most of the day; calm down before stressful or emotionally risky moments; end things on the best part.
    - **Exception:** people differ in their ideal level, but even high-ideal people did best at moderate arousal in the model.
    - *Research-backed; simulated.*
-10. **Meaning mostly makes hard things hurt less.**
+10. **Meaning makes hard things hurt less.**
     - It adds little pleasure directly; it lowers how much we resist and suffer from difficulty.
     - **Try:** when taking on something hard, be clear about why it matters to you.
     - **Exception:** *searching* for meaning, as opposed to having it, was linked to slightly more depression; meaningful lives also take on more stress.
-    - *Research-backed; simulated.*
+    - *Research-backed; simulated. In the model, that's meaning's main channel only when stress is frequent; otherwise its direct pleasure and focus matter more.*
 11. **Build capacity when young, enjoy it when old, and favor quick payoffs.**
     - This held under every way of adding up a life we tried; counting boredom as suffering explains why a long dull life isn't better than a shorter vivid one.
     - **Try:** prefer investments in enjoyment that pay off within months, not only decades.
@@ -93,7 +93,7 @@ How sure each one is: **proved** means it follows mathematically from the model'
     - *Simulated.*
 12. **Meet fear of death with practice, started early, not with avoidance alone.**
     - Fear of death works like any other stressor: what hurts is resisting it. Building calm early, and keeping it up, paid best.
-    - **Try:** mix general calm practice with some deliberate reflection on finitude, rather than only one kind.
+    - **Try:** keep a general calm practice; adding some deliberate reflection on finitude helped in default settings, but less reliably.
     - **Exception:** setting dread aside the rest of the time helps only if it actually works for you; plain suppression tends to come back and keeps you from getting used to it. Reflection on death pays mainly if it makes you savor more, and that evidence is thin.
     - *Research-backed; simulated.*
 

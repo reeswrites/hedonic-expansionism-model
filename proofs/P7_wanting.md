@@ -65,7 +65,7 @@ So $w_j(t) = v_j(t) + s_j(t) > M \ge w_i(t)$ for all $i \ne j$, and $j$ is chose
 | 0.1 | 8.29 (lock 0.94) | 50.28 | 58.58 | 60.36 |
 | 0.3 | 1.98 (lock 1.00) | 46.50 | 58.42 | 60.36 |
 
-These match the page's P7c table. Late per-period gap at $\pi = 1$, $\sigma = 0.3$: 0.90, which is $\max_{i\ne j}\ell_i = 0.9$ when the locked source is the top-liked one, as P7b.4 predicts. With $\sigma = 0.3$, $d = 0.1$: $s^* = 0.9\cdot0.3/0.1 = 2.7$ (at $\pi = 1$), far above any $v_i \le 1$, so P7b.2 guarantees permanent lock once $s_j$ climbs past the alternatives. The lock share rises from 0.26 ($\pi = 0$) to 1.00 ($\pi = 1$), roughly tracking $\pi$ above 0.5. Random worlds: $V$ rose with more urge-steering in 1 of 1,500 steps (largest +0.569, within seed noise).
+These match the page's P7c table. Late per-period gap at $\pi = 1$, $\sigma = 0.3$: 0.90, which is $\max_{i\ne j}\ell_i = 0.9$ when the locked source is the top-liked one, as P7b.4 predicts. With $\sigma = 0.3$, $d = 0.1$: $s^* = 0.9\cdot0.3/0.1 = 2.7$ (at $\pi = 1$), far above any $v_i \le 1$, so P7b.2 guarantees permanent lock once $s_j$ climbs past the alternatives. The lock share rises from 0.26 ($\pi = 0$) to 1.00 ($\pi = 1$), roughly tracking $\pi$ above 0.5. Random worlds: $V$ rose with more urge-steering in 1 of 1,500 steps (largest +0.569; not seed noise, but a real exception: greedy liking alternates its top two sources and never rests them, and occasional urge picks space them out. Failures occur only when the unused source's fresh liking is within a few percent of the lowest worn value greedy accepts; see [claim_types.md](../docs/claim_types.md)).
 
 ## Status / limits
 
