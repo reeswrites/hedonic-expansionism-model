@@ -6,6 +6,19 @@ Most accounts of well-being, in economics and in philosophy, take a person's tas
 
 > How good a moment can feel probably has a ceiling, but the number of routes to it does not. Liking is fractal: anything liked splits into likable parts and combines into likable wholes, and other people's pleasures can become routes too. Expansion grows those routes, outward, inward and across people, so more of a life is lived near the ceiling. It pays only when calm grows with it, once whatever is currently binding has been released, and when it targets activities, skills and capacities rather than acquisitions or statuses.
 
+## The core idea: depth, breadth and expansion
+
+- **Depth is where lasting growth comes from.**
+  - Noticing and appreciating more in something you already like doesn't compete for your limited time the way new activities do.
+  - Skill-like, complex pleasures take longer to acquire but resist adaptation; in the models they were the expansion that kept paying most.
+  - Depth needs calm: noticing more also reveals more to dislike, and grading everything dulls feeling.
+- **Breadth is a safety net.**
+  - More favorites don't keep raising how good life feels; they give each one time to recover and protect you when you lose one.
+  - The robust result is that *narrow* lives do worst, whether built on one activity or one person.
+- **They're the same move at different scales.** Noticing finer detail splits one thing into many likable parts, so depth is breadth inside an activity.
+- **Expansion is a process, not a stockpile.** People adapt to what they have; what keeps paying is continuing to learn and grow. So expand activities, skills and capacities, not purchases or statuses, and other people's tastes are one of the best routes in.
+- **In practice:** a few deep, skill-like pursuits for growth, plus enough unrelated breadth for safety and rotation.
+
 This repository contains:
 
 - **[docs/theory.md](docs/theory.md)**: the theory: motivation, thesis, value commitments, sub-claims, content constraints, relation to prior work, objections and open problems, with each claim linked to the model that tests it.
