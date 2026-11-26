@@ -89,6 +89,11 @@ How sure each one is: **proved** means it follows mathematically from the model'
     - **Try:** prefer investments in enjoyment that pay off within months, not only decades.
     - **Exception:** if life is cut short early, slow investments lose a lot; that's the reason to favor quick ones.
     - *Simulated.*
+12. **Meet fear of death with practice, started early, not with avoidance alone.**
+    - Fear of death works like any other stressor: what hurts is resisting it. Building calm early, and keeping it up, paid best.
+    - **Try:** mix general calm practice with some deliberate reflection on finitude, rather than only one kind.
+    - **Exception:** setting dread aside the rest of the time helps only if it actually works for you; plain suppression tends to come back and keeps you from getting used to it. Reflection on death pays mainly if it makes you savor more, and that evidence is thin.
+    - *Research-backed; simulated.*
 
 ### Putting it together: what this says about routine
 

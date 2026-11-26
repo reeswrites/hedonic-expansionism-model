@@ -1,0 +1,77 @@
+Death salience over a lifespan, and practices that answer it.
+Calibrated defaults: dread falls with age, gX=2.5 gE, expo 0.2, sigma 0.2 via reflection only.
+Value per lived year (survival-weighted). LAM=2, meaning 0, practice 1 slot of 10,
+every quarter for 15 years from start, then every 3rd quarter.
+
+D1. Policy x how dread changes with age (value; gain over none in brackets)
+   policy                                          rising           falling              bump              flat
+   none                                    6.523 (+0.000)    6.790 (+0.000)    6.712 (+0.000)    6.743 (+0.000)
+   avoid (suppress)                        6.997 (+0.474)    7.149 (+0.359)    7.101 (+0.390)    7.124 (+0.380)
+   general equanimity                      6.858 (+0.336)    7.041 (+0.251)    6.984 (+0.273)    7.028 (+0.285)
+   targeted death practice                 6.926 (+0.404)    7.064 (+0.274)    7.027 (+0.315)    7.065 (+0.322)
+   both, alternating                       7.271 (+0.749)    7.357 (+0.567)    7.330 (+0.618)    7.387 (+0.644)
+   both + set dread aside otherwise        7.604 (+1.081)    7.622 (+0.832)    7.616 (+0.904)    7.646 (+0.902)
+   targeted, only when salience high       6.631 (+0.109)    6.877 (+0.087)    6.807 (+0.095)    6.822 (+0.078)
+   general, only when salience high        6.554 (+0.031)    6.827 (+0.037)    6.750 (+0.038)    6.771 (+0.028)
+   best under rising  : both + set dread aside otherwise
+   best under falling : both + set dread aside otherwise
+   best under bump    : both + set dread aside otherwise
+   best under flat    : both + set dread aside otherwise
+
+D2. When to start (targeted and general), rising vs falling dread
+   rising   general   start 20 +0.336  start 35 +0.257  start 50 +0.165  start 65 +0.056  start 80 -0.015
+   rising   targeted  start 20 +0.404  start 35 +0.338  start 50 +0.245  start 65 +0.119  start 80 +0.007
+   falling  general   start 20 +0.251  start 35 +0.141  start 50 +0.055  start 65 -0.021  start 80 -0.040
+   falling  targeted  start 20 +0.274  start 35 +0.089  start 50 -0.005  start 65 -0.058  start 80 -0.054
+
+D3. Targeted vs general: depends on how much of your distress is about death
+   (ordinary stressor rate O_rate, and targeted learning speed gX relative to gE=0.06; calibrated 0.15)
+   O_rate                   gX=0.06 T-G               gX=0.09 T-G               gX=0.15 T-G               gX=0.24 T-G
+   0.00                   +0.184 best B             +0.294 best B             +0.405 best B             +0.480 best B
+   0.15                   -0.029 best B             +0.090 best B             +0.210 best B             +0.292 best B
+   0.30                   -0.230 best B             -0.105 best B             +0.023 best B             +0.113 best B
+   0.60                   -0.593 best G             -0.451 best G             -0.297 best B             -0.188 best B
+
+D4. Avoidance: good now, bad later? (gain over none, by horizon in years)
+   rising    2y +0.129   5y +0.177  10y +0.181  20y +0.238  40y +0.324  80y +0.474
+   falling   2y +1.081   5y +0.966  10y +0.788  20y +0.622  40y +0.447  80y +0.359
+   natural habituation hab (falling, lifetime gain of avoid over none):  hab 0.000 +0.487  hab 0.005 +0.359  hab 0.010 +0.277  hab 0.020 +0.181
+   sensitivity (falling, lifetime): rebound share x attention load
+     rebound 0.00  load 0.00 +0.835  load 0.25 +0.584  load 0.50 +0.333
+     rebound 0.25  load 0.00 +0.610  load 0.25 +0.359  load 0.50 +0.108
+     rebound 0.50  load 0.00 +0.385  load 0.25 +0.134  load 0.50 -0.117
+     rebound 1.00  load 0.00 -0.065  load 0.25 -0.316  load 0.50 -0.567
+   suppression strength supp (falling, lifetime; avoid minus none | 'both+aside' minus 'both'):
+     supp 0.1  avoid -0.152   aside -0.171
+     supp 0.2  avoid -0.052   aside -0.083
+     supp 0.4  avoid +0.152   aside +0.092
+     supp 0.6  avoid +0.359   aside +0.265
+
+D5. Exposure cost and finitude savoring (targeted minus general; falling dread)
+   expo              sigma=0.00      sigma=0.10      sigma=0.20      sigma=0.40
+   0.0                   -0.133          +0.016          +0.165          +0.463
+   0.1                   -0.227          -0.066          +0.095          +0.417
+   0.2                   -0.322          -0.150          +0.023          +0.368
+   0.4                   -0.514          -0.322          -0.131          +0.253
+   does salience itself pay once accepted? value of none vs targeted when sigma high:
+     sigma 0.0: none 6.729  targeted 6.670  joy none 8.910  joy targeted 8.562
+     sigma 0.4: none 6.851  targeted 7.458  joy none 9.032  joy targeted 9.349
+     sigma 1.0: none 7.035  targeted 8.639  joy none 9.216  joy targeted 10.531
+
+D6. Meaning as a substitute (gain over none, by meaning level; falling)
+   meaning 0.0: none 6.790  general +0.251  targeted +0.274
+   meaning 0.5: none 7.280  general +0.150  targeted +0.254
+   meaning 1.0: none 7.772  general +0.045  targeted +0.232
+
+D7. Robustness: winner across LAM, decay, profile and suppression strength
+   none                       wins  0 / 72
+   avoid (suppress)           wins  1 / 72
+   general equanimity         wins  0 / 72
+   targeted death practice    wins  3 / 72
+   both, alternating          wins 20 / 72
+   both + set dread aside otherwise wins 48 / 72
+   avoidance worse than doing nothing in 18 / 72
+   supp 0.2 winners: {'targeted death practice': 3, 'both, alternating': 20, 'both + set dread aside otherwise': 13}
+   supp 0.6 winners: {'avoid (suppress)': 1, 'both + set dread aside otherwise': 35}
+   winners at fast decay 0.03: ['avoid (suppress)', 'both + set dread aside otherwise', 'both, alternating', 'targeted death practice']
+   winners at LAM=1: ['avoid (suppress)', 'both + set dread aside otherwise', 'both, alternating', 'targeted death practice']

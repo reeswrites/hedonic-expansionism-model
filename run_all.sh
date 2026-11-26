@@ -28,6 +28,7 @@ run hx_adaptation_ladder.py
 run hx_arousal.py
 run hx_lifespan.py
 run hx_meaning.py
+run hx_death.py
 run hx_combined.py
 run hx_assumption_checks.py
 run hx_pair.py
