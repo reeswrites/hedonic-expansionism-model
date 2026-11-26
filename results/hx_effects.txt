@@ -1,0 +1,40 @@
+Headline effects with error bars: seed noise and parameter spread (uses hx_stats.py).
+
+Yardstick, default life -> expansionist life (value): +3.196 ± 0.019 (SE, 20 paired seeds)
+Parameters redrawn: 41 invented constants; held fixed: ACQ_A, ACQ_L0, ACQ_SIG, ACQ_a, LAM, LOSS
+
+Cutting craving, feed world (pleasure)
+   defaults: +1.032 ± 0.006 (SE, 20 paired seeds), +69% of baseline
+   across worlds, as share of baseline pleasure: median +87.14%, middle half +59.61% to +111.28%, positive in 98% of 60 worlds
+
+Cutting craving, default life (pleasure)
+   defaults: +0.234 ± 0.009 (SE, 20 paired seeds), +47% of baseline
+   across worlds, as share of baseline pleasure: median +41.51%, middle half +19.12% to +61.15%, positive in 92% of 60 worlds
+
+Cutting craving, feed world (value)
+   defaults: +1.111 ± 0.006 (SE, 20 paired seeds), 35% of the yardstick gap
+   across worlds, as share of that world's yardstick gap: median +39.78%, middle half +27.79% to +62.63%, positive in 97% of 60 worlds
+
+Adding calm 0.8, chronic distress, no craving
+   defaults: +1.063 ± 0.008 (SE, 20 paired seeds), 33% of the yardstick gap
+   across worlds, as share of that world's yardstick gap: median +30.37%, middle half +20.72% to +47.76%, positive in 100% of 60 worlds
+
+Adding calm 0.8, feed world, no craving
+   defaults: +0.386 ± 0.008 (SE, 20 paired seeds), 12% of the yardstick gap
+   across worlds, as share of that world's yardstick gap: median +11.03%, middle half +5.99% to +19.58%, positive in 98% of 60 worlds
+
+Vivid liking 0.2, feed world, no craving
+   defaults: +0.566 ± 0.004 (SE, 20 paired seeds), 18% of the yardstick gap
+   across worlds, as share of that world's yardstick gap: median +17.78%, middle half +12.08% to +22.76%, positive in 98% of 60 worlds
+
+Flatten 0.6 (choice kept), feed world
+   defaults: +0.062 ± 0.005 (SE, 20 paired seeds), 2% of the yardstick gap
+   across worlds, as share of that world's yardstick gap: median +1.43%, middle half +0.30% to +5.23%, positive in 78% of 60 worlds
+
+Flatten 0.6 + careless choice, feed world
+   defaults: -0.564 ± 0.008 (SE, 20 paired seeds), -18% of the yardstick gap
+   across worlds, as share of that world's yardstick gap: median -18.65%, middle half -28.13% to -9.84%, positive in 2% of 60 worlds
+
+No numbing source in the default life
+   defaults: +1.832 ± 0.020 (SE, 20 paired seeds), 57% of the yardstick gap
+   across worlds, as share of that world's yardstick gap: median +55.51%, middle half +47.93% to +67.51%, positive in 98% of 60 worlds

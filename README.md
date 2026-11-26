@@ -32,6 +32,8 @@ This repository contains:
 
 ## What the models suggest
 
+**Error bars.** Seed noise is small: standard errors run about 1% of the effects. The real uncertainty is the invented parameters. Redrawing them within 3× moves effect sizes a lot (cutting craving's pleasure gain: middle half 60–110% across worlds, 69% at defaults), while directions mostly hold (92–100% of worlds for the main effects). So trust the signs more than the sizes; see [results/hx_effects.txt](results/hx_effects.txt) and the helper [model/hx_stats.py](model/hx_stats.py).
+
 What kind of claim each one is (true for all values, true when one term outweighs another, or true only in some settings) is in [docs/claim_types.md](docs/claim_types.md). How sure each one is: **proved** means it follows mathematically from the model's assumptions; **simulated** means it showed up in simulations with made-up numbers; **research-backed** means published studies point the same way. None of this has been tested on real people as a whole, so treat the "try" lines as experiments, not advice. Details are in [docs/theory.md](docs/theory.md).
 
 1. **Variety is a safety net, not an endless boost.**
@@ -56,7 +58,7 @@ What kind of claim each one is (true for all values, true when one term outweigh
    - *Proved and simulated.*
 5. **Urges are a lagging guess about what you'll enjoy.**
    - Urges remember what was good last time; they miss what's gone stale and what's recovered.
-   - Steering by urges less mostly *raises* pleasure, by freeing time for things that keep giving: about 70% more in a world with an engineered feed, about 45% in the model's default life (where it isn't enough on its own to make life net positive). Mostly the dips go: periods below zero fell from 7% to 1%.
+   - Steering by urges less mostly *raises* pleasure, by freeing time for things that keep giving: about 70% more in a world with an engineered feed (middle half 60–110% across redrawn parameters), about 45% in the model's default life (20–60%) (where it isn't enough on its own to make life net positive). Mostly the dips go: periods below zero fell from 7% to 1%.
    - Adding calm helps most under stress. Evening out how much you like things cost almost nothing in the model, unless it also made you careless about what you pick, which gave back up to two-thirds of the gain.
    - **Try:** let an urge pass for a few minutes, then choose by what you actually enjoyed recently; a simple log of what you liked helps.
    - **Exception:** a restless urge sometimes helps you try new things; and a log that assumes everything wears out will underuse pleasures that grow with regular use. Not acting on urges you still feel keeps most of the gain but not all, since an unmet urge can itself sting.
