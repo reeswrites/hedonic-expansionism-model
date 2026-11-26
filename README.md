@@ -19,19 +19,54 @@ This repository contains:
 
 ## What the models suggest
 
-In plain terms, with how sure each one is. **Proved** means it follows mathematically from the model's assumptions. **Simulated** means it showed up in simulations with made-up numbers. **Research-backed** means published studies point the same way. Details and caveats are in [docs/theory.md](docs/theory.md).
+How sure each one is: **proved** means it follows mathematically from the model's assumptions; **simulated** means it showed up in simulations with made-up numbers; **research-backed** means published studies point the same way. Details and caveats are in [docs/theory.md](docs/theory.md).
 
-1. **Variety helps, but mostly as a safety net.** Having more things you enjoy doesn't keep raising how good life feels, because your time is limited. What it buys is resilience when you lose one, and time for each favorite to feel fresh again. *Proved.*
-2. **Getting better at noticing only pays if you stay calm.** Learning to notice finer detail (in music, food, people) reveals more to enjoy, but also more to dislike. Without equanimity, the unpleasant parts grab your attention. Experts who grade and categorize everything feel *less*, which matches published research. Calm takes practice: steady practice pays off, while practicing only when things are bad doesn't. *Proved for a single moment; simulated over time; research-backed.*
-3. **When you're struggling, focus on relief, but keep one small thing going.** Effort can go to two things: *relief* (rest, sleep, support, fixing what's wrong) and *growing your enjoyment* (a skill, a hobby, something new). The worse you feel, the more should go to relief, but not all of it. In a rough week, most of your energy goes to rest and sorting things out, yet you still play your instrument for ten minutes rather than dropping everything until you feel better. The reason is diminishing returns: the first hours of rest help a lot and later ones less, so a small slice of growth is worth more than one more hour of rest. *Proved, assuming those diminishing returns; the robust part is simply that some relief beats none. Exceptions: if relief isn't possible, lean into enjoyment anyway; if something does both, like a walk with a friend, it counts twice.*
-4. **Numbing yourself is fine as a bridge, dangerous as a habit.** Escaping a bad moment occasionally can help. Doing it habitually can lock into a loop that leaves you worse off than doing nothing, and the model gives the exact conditions for that loop. Avoiding these loops (and endless feeds) was the single biggest lever in the combined model. *Proved and simulated.*
-5. **Your urges are a lagging guess about what you'll enjoy.** Letting urges decide less often, without fighting them, tends to help. *Partly proved; simulated.*
-6. **New tastes need spaced exposure and a calm mind.** Trying something you dislike too often, too fast, or while stressed tends to kill the taste before it forms. Complex things (music, crafts, cuisines) take longer to like but stay rewarding much longer. *Simulated, calibrated to a published music study.*
-7. **Invest in activities and skills, not purchases or status.** People adapt almost completely to new things and circumstances, but much less to varied, engaging activities. Gains from building skills, regular pleasures like touch or exercise, and genuine rest lasted; gains from purchases faded. *Simulated, calibrated from the adaptation research.*
-8. **A few close, chosen people beat a broad solo life for most people.** The benefit comes mostly from shared relief. Solitude is the better life for people who recharge alone or find company draining. Between two people, compromising on something neither loves is the weakest option; taking turns with each other's favorites is how both expand. *Simulated; research-backed in part.*
-9. **Calm beats keyed-up.** Moderate arousal works best, and calm pleasures last longer than exciting ones. Arousal mostly works through attention: it amplifies whatever already has your focus, good or bad. *Research-backed; simulated.*
-10. **Meaning mostly works by making hard things hurt less.** It doesn't add much pleasure directly. Its main effect is lowering how much we resist and suffer from difficulties. *Research-backed; simulated.*
-11. **Build capacity when young, enjoy it when old, and prefer things that pay off soon.** This held under every way of adding up a life that we tried. Quick-paying investments are the best hedge against a shorter life than expected. Counting boredom as suffering is enough to explain why a long, dull life isn't better than a shorter, vivid one. *Simulated.*
+1. **Variety is a safety net, not an endless boost.**
+   - Time is limited, so more favorites don't keep raising how good life feels.
+   - What variety buys is resilience when you lose one, and time for each favorite to feel fresh again.
+   - *Proved.*
+2. **Noticing more only pays if you stay calm.**
+   - Finer attention (to music, food, people) reveals more to enjoy, and more to dislike.
+   - Without equanimity the unpleasant parts take over. Experts who grade everything feel *less*.
+   - Calm takes steady practice; practicing only when things are bad doesn't pay.
+   - *Proved for a single moment; simulated over time; research-backed.*
+3. **When you're struggling, focus on relief, but keep one small thing going.**
+   - Most effort goes to rest, support and fixing what's wrong, but not all of it: still play your instrument for ten minutes.
+   - The first hours of rest help most, so a small slice of growth is worth more than one more hour of rest.
+   - If relief isn't possible, lean into enjoyment anyway.
+   - *Proved under its assumptions; the robust part is that some relief beats none.*
+4. **Numbing is fine as a bridge, dangerous as a habit.**
+   - Occasional escape can help; habitual escape can lock into a loop that leaves you worse off than doing nothing.
+   - Avoiding these loops (and endless feeds) was the biggest single lever in the combined model.
+   - *Proved and simulated.*
+5. **Urges are a lagging guess about what you'll enjoy.**
+   - Let urges decide less often, without fighting them.
+   - *Partly proved; simulated.*
+6. **New tastes need spacing and a calm mind.**
+   - Too often, too fast, or while stressed, and the taste dies before it forms.
+   - Complex things (music, crafts, cuisines) take longer to like but stay rewarding much longer.
+   - *Simulated, calibrated to a published music study.*
+7. **Invest in activities and skills, not purchases or status.**
+   - People adapt almost fully to new things and circumstances, much less to varied, engaging activities.
+   - Gains from skills, regular pleasures like touch or exercise, and genuine rest lasted; gains from purchases faded.
+   - *Simulated, calibrated from the adaptation research.*
+8. **A few close, chosen people beat a broad solo life for most people.**
+   - The benefit is mostly shared relief.
+   - Solitude is better for people who recharge alone.
+   - Between two people, taking turns with each other's favorites beats compromising on something neither loves.
+   - *Simulated; partly research-backed.*
+9. **Calm beats keyed-up.**
+   - Moderate arousal works best, and calm pleasures last longer than exciting ones.
+   - Arousal amplifies whatever already has your attention, good or bad.
+   - *Research-backed; simulated.*
+10. **Meaning mostly makes hard things hurt less.**
+    - It adds little pleasure directly; it lowers how much we resist and suffer from difficulty.
+    - *Research-backed; simulated.*
+11. **Build capacity when young, enjoy it when old, and favor quick payoffs.**
+    - This held under every way of adding up a life we tried.
+    - Investments that pay off soon are the best hedge against a shorter life than expected.
+    - Counting boredom as suffering explains why a long dull life isn't better than a shorter vivid one.
+    - *Simulated.*
 
 ### Putting it together: what this says about routine
 
