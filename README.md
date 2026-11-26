@@ -57,7 +57,9 @@ How sure each one is: **proved** means it follows mathematically from the model'
 5. **Urges are a lagging guess about what you'll enjoy.**
    - Urges remember what was good last time; they miss what's gone stale and what's recovered.
    - **Try:** let an urge pass for a few minutes, then choose by what you actually enjoyed recently; a simple log of what you liked helps.
-   - **Exception:** a restless urge sometimes helps you try new things; and a log that assumes everything wears out will underuse pleasures that grow with regular use.
+   - Steering by urges less mostly *raises* pleasure (about 70% more in the model), by freeing time for things that keep giving. It doesn't flatten life: highs stay as high, the dips mostly disappear.
+   - **Try:** let an urge pass for a few minutes, then choose by what you actually enjoyed recently; a simple log of what you liked helps.
+   - **Exception:** a restless urge sometimes helps you try new things; and a log that assumes everything wears out will underuse pleasures that grow with regular use. Not acting on urges you still feel keeps most of the gain but not all, since an unmet urge can itself sting.
    - *Partly proved; simulated.*
 6. **New tastes need spacing and a calm mind.**
    - Too often, too fast, or while stressed, and the taste dies before it forms; complex things take longer to like but last much longer.
