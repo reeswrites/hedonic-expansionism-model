@@ -1,0 +1,43 @@
+Does cutting craving raise pleasure over time, or just even it out?
+
+K1. Steering only (claim 5 as run): what the gain is made of
+  C5 world (feed present)
+   urge steers 1.00                   V  1.197  pleasure  1.459  suffering  0.231  SD(V)  0.65  SD(pl)  0.30  neg    7%  growth +0.107  skill uses   1.8  feed 299.0
+   urge steers 0.75                   V  1.388  pleasure  1.622  suffering  0.217  SD(V)  0.68  SD(pl)  0.36  neg    6%  growth -0.027  skill uses 143.9  feed 293.4
+   urge steers 0.50                   V  1.626  pleasure  1.848  suffering  0.211  SD(V)  0.72  SD(pl)  0.42  neg    5%  growth -0.022  skill uses 235.1  feed 261.9
+   urge steers 0.25                   V  1.982  pleasure  2.192  suffering  0.205  SD(V)  0.71  SD(pl)  0.45  neg    2%  growth +0.103  skill uses 292.6  feed 143.4
+   urge steers 0.00                   V  2.314  pleasure  2.493  suffering  0.189  SD(V)  0.70  SD(pl)  0.41  neg    1%  growth +0.190  skill uses 419.5  feed   0.0
+  default life
+   urge steers 1.00                   V -0.730  pleasure  0.494  suffering  0.687  SD(V)  0.40  SD(pl)  0.15  neg   97%  growth -0.110  skill uses   0.0  feed 294.8
+   urge steers 0.75                   V -0.691  pleasure  0.504  suffering  0.673  SD(V)  0.41  SD(pl)  0.16  neg   97%  growth -0.119  skill uses  17.9  feed 276.8
+   urge steers 0.50                   V -0.620  pleasure  0.542  suffering  0.656  SD(V)  0.41  SD(pl)  0.17  neg   97%  growth -0.127  skill uses  53.2  feed 216.5
+   urge steers 0.25                   V -0.491  pleasure  0.613  suffering  0.627  SD(V)  0.42  SD(pl)  0.19  neg   96%  growth -0.143  skill uses  93.6  feed 127.2
+   urge steers 0.00                   V -0.287  pleasure  0.718  suffering  0.577  SD(V)  0.39  SD(pl)  0.17  neg   93%  growth -0.165  skill uses 159.5  feed   0.0
+
+K2. Craving also felt: unmet-urge tension tau, reference inflation rc
+  tau=0.2 rc=0.0 (C5 world)
+   craving 1.00 (felt scales too)     V  1.189  pleasure  1.459  suffering  0.235  SD(V)  0.65  SD(pl)  0.30  neg    7%  growth +0.107  skill uses   1.8  feed 299.0
+   craving 0.50 (felt scales too)     V  1.544  pleasure  1.848  suffering  0.252  SD(V)  0.69  SD(pl)  0.42  neg    5%  growth -0.022  skill uses 235.1  feed 261.9
+   craving 0.00 (felt scales too)     V  2.314  pleasure  2.493  suffering  0.189  SD(V)  0.70  SD(pl)  0.41  neg    1%  growth +0.190  skill uses 419.5  feed   0.0
+   urge surfing only (pi 0, felt full) V  2.054  pleasure  2.493  suffering  0.320  SD(V)  0.71  SD(pl)  0.41  neg    2%  growth +0.190  skill uses 419.5  feed   0.0
+  tau=0.5 rc=0.0 (C5 world)
+   craving 1.00 (felt scales too)     V  1.176  pleasure  1.459  suffering  0.242  SD(V)  0.67  SD(pl)  0.30  neg    7%  growth +0.107  skill uses   1.8  feed 299.0
+   craving 0.50 (felt scales too)     V  1.422  pleasure  1.848  suffering  0.313  SD(V)  0.70  SD(pl)  0.42  neg    6%  growth -0.022  skill uses 235.1  feed 261.9
+   craving 0.00 (felt scales too)     V  2.314  pleasure  2.493  suffering  0.189  SD(V)  0.70  SD(pl)  0.41  neg    1%  growth +0.190  skill uses 419.5  feed   0.0
+   urge surfing only (pi 0, felt full) V  1.664  pleasure  2.493  suffering  0.515  SD(V)  0.71  SD(pl)  0.41  neg    5%  growth +0.190  skill uses 419.5  feed   0.0
+  tau=0.0 rc=0.3 (C5 world)
+   craving 1.00 (felt scales too)     V  0.176  pleasure  0.439  suffering  0.231  SD(V)  0.71  SD(pl)  0.42  neg   23%  growth -0.568  skill uses   1.8  feed 299.0
+   craving 0.50 (felt scales too)     V  1.257  pleasure  1.479  suffering  0.211  SD(V)  0.74  SD(pl)  0.48  neg    7%  growth -0.262  skill uses 235.1  feed 261.9
+   craving 0.00 (felt scales too)     V  2.314  pleasure  2.493  suffering  0.189  SD(V)  0.70  SD(pl)  0.41  neg    1%  growth +0.190  skill uses 419.5  feed   0.0
+   urge surfing only (pi 0, felt full) V  1.849  pleasure  2.028  suffering  0.189  SD(V)  0.66  SD(pl)  0.38  neg    3%  growth -0.034  skill uses 419.5  feed   0.0
+  tau=0.5 rc=0.3 (C5 world)
+   craving 1.00 (felt scales too)     V  0.155  pleasure  0.439  suffering  0.242  SD(V)  0.72  SD(pl)  0.42  neg   24%  growth -0.568  skill uses   1.8  feed 299.0
+   craving 0.50 (felt scales too)     V  1.052  pleasure  1.479  suffering  0.313  SD(V)  0.69  SD(pl)  0.48  neg    9%  growth -0.262  skill uses 235.1  feed 261.9
+   craving 0.00 (felt scales too)     V  2.314  pleasure  2.493  suffering  0.189  SD(V)  0.70  SD(pl)  0.41  neg    1%  growth +0.190  skill uses 419.5  feed   0.0
+   urge surfing only (pi 0, felt full) V  1.199  pleasure  2.028  suffering  0.515  SD(V)  0.68  SD(pl)  0.38  neg    8%  growth -0.034  skill uses 419.5  feed   0.0
+
+K3. Without the feed and the salience bias (does steering still matter?)
+   flat salience, no feed, steers 1.00 V  1.933  pleasure  2.130  suffering  0.198  SD(V)  0.69  SD(pl)  0.35  neg    3%  growth +0.001  skill uses 290.2  feed   0.0
+     + tension 0.5 felt               V  1.905  pleasure  2.130  suffering  0.213  SD(V)  0.71  SD(pl)  0.35  neg    4%  growth +0.001  skill uses 290.2  feed   0.0
+   flat salience, no feed, steers 0.00 V  2.314  pleasure  2.493  suffering  0.189  SD(V)  0.70  SD(pl)  0.41  neg    1%  growth +0.190  skill uses 419.5  feed   0.0
+     + tension 0.5 felt               V  2.314  pleasure  2.493  suffering  0.189  SD(V)  0.70  SD(pl)  0.41  neg    1%  growth +0.190  skill uses 419.5  feed   0.0

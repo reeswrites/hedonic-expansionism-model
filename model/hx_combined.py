@@ -152,7 +152,8 @@ def run(cfg, seed=0):
     R = {k: 0.0 for k in P["PHI"]}
     carry, pend, build, pi = 0.0, 0.0, 0.0, cfg.get("pi", 0.0)
     rho_al, motf = cfg.get("rho_al", P["RHO_AL"]), cfg.get("motf", P["MOTF"])
-    V, log = np.zeros(T), dict(uses={}, feed_y=[], other_y=[])
+    V, log = np.zeros(T), dict(uses={}, feed_y=[], other_y=[], pl=np.zeros(T), su=np.zeros(T), tens=np.zeros(T))
+    tau, rc = cfg.get("tension", 0.0), cfg.get("ref_infl", 0.0)   # opt-in craving costs (hx_craving.py)
     for t in range(T):
         if cfg.get("remove_at") == t:                    # lose the most-used sensory source
             W.remove(max((s for s in W if s["kind"] == "sensory"), key=lambda s: s["uses"]))
@@ -174,6 +175,10 @@ def run(cfg, seed=0):
                 break
             f = want_score if rng.random() < pi else liking_score
             chosen.append(max(pool, key=lambda s: f(s, st, cfg)))
+        unmet = 0.0
+        if tau:
+            rest = [s for s in W if s["kind"] not in ban and all(s is not c for c in chosen)]
+            unmet = max([max(0.0, want_score(s, st, cfg) - max(liking_score(s, st, cfg), 0.0)) for s in rest] or [0.0])
         v, pos, nsoc = 0.0, 0.0, 0
         for i, s in enumerate(chosen):
             k = s["kind"]; s["uses"] += 1
@@ -190,7 +195,7 @@ def run(cfg, seed=0):
                 pend += P["REB"] * (1 + build); build += P["BUILD"]
             else:
                 v += y - R[k] if y >= R[k] else P["LOSS"] * (y - R[k])
-                R[k] += P["K_REF"] * (P["PHI"][k] * y - R[k])
+                R[k] += P["K_REF"] * (P["PHI"][k] * y + rc * s["w"] - R[k])
                 pos += max(y, 0)
                 if y > 0 and not bg:                     # savoring relieves (undoing effect)
                     st["S"] -= min(0.5, P["RHO_P"] * y) * st["S"]
@@ -233,7 +238,8 @@ def run(cfg, seed=0):
                 R[k] -= 0.5 * P["K_REF"] * R[k]          # deprivation lowers the reference
         keep = 0.6 * (1 - st["a"]) + 0.2 * st["a"]
         Sfelt = st["S"] * (1 - st["e"]) * st["dull"] * (1 + 0.3 * st["a"])
-        V[t] = v + carry + 0.2 * (1 - abs(st["a"] - 0.5)) - P["LAM"] * Sfelt
+        V[t] = v + carry + 0.2 * (1 - abs(st["a"] - 0.5)) - P["LAM"] * (Sfelt + tau * unmet)
+        log["pl"][t] = v + carry; log["su"][t] = Sfelt + tau * unmet; log["tens"][t] = tau * unmet
         carry = keep * 0.5 * pos
         # relationship loss: convex grief in the share of (recent) time the person carried
         for s in W:
