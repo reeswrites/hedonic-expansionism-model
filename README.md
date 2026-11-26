@@ -19,53 +19,62 @@ This repository contains:
 
 ## What the models suggest
 
-How sure each one is: **proved** means it follows mathematically from the model's assumptions; **simulated** means it showed up in simulations with made-up numbers; **research-backed** means published studies point the same way. Details and caveats are in [docs/theory.md](docs/theory.md).
+How sure each one is: **proved** means it follows mathematically from the model's assumptions; **simulated** means it showed up in simulations with made-up numbers; **research-backed** means published studies point the same way. None of this has been tested on real people as a whole, so treat the "try" lines as experiments, not advice. Details are in [docs/theory.md](docs/theory.md).
 
 1. **Variety is a safety net, not an endless boost.**
-   - Time is limited, so more favorites don't keep raising how good life feels.
-   - What variety buys is resilience when you lose one, and time for each favorite to feel fresh again.
+   - Time is limited, so more favorites don't keep raising how good life feels; variety buys resilience when you lose one, and time for each favorite to feel fresh again.
+   - **Try:** keep a few unrelated sources of enjoyment, so losing one doesn't take the others with it.
+   - **Exception:** only holds if bigger losses hurt more than proportionally; if not, putting more into one deep thing can be better.
    - *Proved.*
 2. **Noticing more only pays if you stay calm.**
-   - Finer attention (to music, food, people) reveals more to enjoy, and more to dislike.
-   - Without equanimity the unpleasant parts take over. Experts who grade everything feel *less*.
-   - Calm takes steady practice; practicing only when things are bad doesn't pay.
+   - Finer attention reveals more to enjoy and more to dislike; experts who grade everything feel *less*.
+   - **Try:** when you're getting into something, notice details without scoring them; pair it with a regular calm practice.
+   - **Exception:** practicing only when things are bad didn't pay in the model; the gains need steady practice.
    - *Proved for a single moment; simulated over time; research-backed.*
 3. **When you're struggling, focus on relief, but keep one small thing going.**
-   - Most effort goes to rest, support and fixing what's wrong, but not all of it: still play your instrument for ten minutes.
    - The first hours of rest help most, so a small slice of growth is worth more than one more hour of rest.
-   - If relief isn't possible, lean into enjoyment anyway.
-   - *Proved under its assumptions; the robust part is that some relief beats none.*
+   - **Try:** in a rough week, rest and get support, but keep ten minutes for one thing you enjoy or are learning.
+   - **Exception:** if relief isn't possible (e.g. chronic pain), lean into enjoyment anyway; the exact split matters less than doing some of each.
+   - *Proved under its assumptions.*
 4. **Numbing is fine as a bridge, dangerous as a habit.**
    - Occasional escape can help; habitual escape can lock into a loop that leaves you worse off than doing nothing.
-   - Avoiding these loops (and endless feeds) was the biggest single lever in the combined model.
+   - **Try:** before reaching for an escape, ask "joy, or only relief?" and set a stopping point; keep feeds out of default slots.
+   - **Exception:** a short escape during acute distress came out ahead in the model; the danger is the automatic, repeated version.
    - *Proved and simulated.*
 5. **Urges are a lagging guess about what you'll enjoy.**
-   - Let urges decide less often, without fighting them.
+   - Urges remember what was good last time; they miss what's gone stale and what's recovered.
+   - **Try:** let an urge pass for a few minutes, then choose by what you actually enjoyed recently; a simple log of what you liked helps.
+   - **Exception:** a restless urge sometimes helps you try new things; and a log that assumes everything wears out will underuse pleasures that grow with regular use.
    - *Partly proved; simulated.*
 6. **New tastes need spacing and a calm mind.**
-   - Too often, too fast, or while stressed, and the taste dies before it forms.
-   - Complex things (music, crafts, cuisines) take longer to like but stay rewarding much longer.
+   - Too often, too fast, or while stressed, and the taste dies before it forms; complex things take longer to like but last much longer.
+   - **Try:** retry something you don't like yet every few days, when you're relaxed, in small amounts.
+   - **Exception:** some dislikes are about real harm or deep aversion (nausea, disgust) and don't flip; pushing them isn't worth it.
    - *Simulated, calibrated to a published music study.*
 7. **Invest in activities and skills, not purchases or status.**
    - People adapt almost fully to new things and circumstances, much less to varied, engaging activities.
-   - Gains from skills, regular pleasures like touch or exercise, and genuine rest lasted; gains from purchases faded.
+   - **Try:** when choosing between buying something and starting something, lean toward starting; keep regular pleasures like touch and exercise regular.
+   - **Exception:** status and some circumstances (long commutes, noise) don't adapt away, for better or worse; purchases that enable an activity count as the activity.
    - *Simulated, calibrated from the adaptation research.*
 8. **A few close, chosen people beat a broad solo life for most people.**
-   - The benefit is mostly shared relief.
-   - Solitude is better for people who recharge alone.
-   - Between two people, taking turns with each other's favorites beats compromising on something neither loves.
+   - The benefit is mostly shared relief; between two people, taking turns with each other's favorites beats compromising on something neither loves.
+   - **Try:** invest in two to four close ties rather than many shallow ones; alternate who picks what you do together.
+   - **Exception:** for people who recharge alone or find company draining, solitude is the better life; obligatory company is worth much less than chosen company.
    - *Simulated; partly research-backed.*
 9. **Calm beats keyed-up.**
-   - Moderate arousal works best, and calm pleasures last longer than exciting ones.
-   - Arousal amplifies whatever already has your attention, good or bad.
+   - Arousal amplifies whatever already has your attention, good or bad; calm pleasures last longer than exciting ones.
+   - **Try:** aim for moderate arousal most of the day; calm down before stressful or emotionally risky moments; end things on the best part.
+   - **Exception:** people differ in their ideal level, but even high-ideal people did best at moderate arousal in the model.
    - *Research-backed; simulated.*
 10. **Meaning mostly makes hard things hurt less.**
     - It adds little pleasure directly; it lowers how much we resist and suffer from difficulty.
+    - **Try:** when taking on something hard, be clear about why it matters to you.
+    - **Exception:** *searching* for meaning, as opposed to having it, was linked to slightly more depression; meaningful lives also take on more stress.
     - *Research-backed; simulated.*
 11. **Build capacity when young, enjoy it when old, and favor quick payoffs.**
-    - This held under every way of adding up a life we tried.
-    - Investments that pay off soon are the best hedge against a shorter life than expected.
-    - Counting boredom as suffering explains why a long dull life isn't better than a shorter vivid one.
+    - This held under every way of adding up a life we tried; counting boredom as suffering explains why a long dull life isn't better than a shorter vivid one.
+    - **Try:** prefer investments in enjoyment that pay off within months, not only decades.
+    - **Exception:** if life is cut short early, slow investments lose a lot; that's the reason to favor quick ones.
     - *Simulated.*
 
 ### Putting it together: what this says about routine
