@@ -56,8 +56,8 @@ How sure each one is: **proved** means it follows mathematically from the model'
    - *Proved and simulated.*
 5. **Urges are a lagging guess about what you'll enjoy.**
    - Urges remember what was good last time; they miss what's gone stale and what's recovered.
-   - **Try:** let an urge pass for a few minutes, then choose by what you actually enjoyed recently; a simple log of what you liked helps.
-   - Steering by urges less mostly *raises* pleasure (about 70% more in the model), by freeing time for things that keep giving. It doesn't flatten life: highs stay as high, the dips mostly disappear.
+   - Steering by urges less mostly *raises* pleasure, by freeing time for things that keep giving: about 70% more in a world with an engineered feed, about 45% in the model's default life (where it isn't enough on its own to make life net positive). Mostly the dips go: periods below zero fell from 7% to 1%.
+   - Adding calm helps most under stress. Evening out how much you like things cost almost nothing in the model, unless it also made you careless about what you pick, which gave back up to two-thirds of the gain.
    - **Try:** let an urge pass for a few minutes, then choose by what you actually enjoyed recently; a simple log of what you liked helps.
    - **Exception:** a restless urge sometimes helps you try new things; and a log that assumes everything wears out will underuse pleasures that grow with regular use. Not acting on urges you still feel keeps most of the gain but not all, since an unmet urge can itself sting.
    - *Partly proved; simulated.*

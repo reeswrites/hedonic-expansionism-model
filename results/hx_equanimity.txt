@@ -1,0 +1,52 @@
+Does the Buddhist package expand liking or flatten it?
+
+E1. Craving at full strength vs cut to zero, under each package
+  C5 world (feed present)
+   craving 1.00 (baseline)        V  1.197  pleasure  1.459  suffering 0.231  peaks  1.81  troughs  1.06  SD(pl) 0.30  neg   7%  liking spread 0.35  growth +0.107
+   craving cut only               V  2.314  pleasure  2.493  suffering 0.189  peaks  2.94  troughs  1.90  SD(pl) 0.41  neg   1%  liking spread 0.23  growth +0.190
+   + calm e 0.8                   V  2.715  pleasure  2.590  suffering 0.037  peaks  3.03  troughs  2.05  SD(pl) 0.39  neg   0%  liking spread 0.23  growth +0.194
+   + flatten 0.3                  V  2.359  pleasure  2.539  suffering 0.190  peaks  2.96  troughs  2.03  SD(pl) 0.37  neg   1%  liking spread 0.18  growth +0.134
+   + flatten 0.6                  V  2.373  pleasure  2.557  suffering 0.192  peaks  2.98  troughs  2.06  SD(pl) 0.36  neg   0%  liking spread 0.15  growth +0.121
+   + vivid 0.2                    V  2.872  pleasure  3.025  suffering 0.176  peaks  3.56  troughs  2.30  SD(pl) 0.50  neg   1%  liking spread 0.26  growth +0.183
+   flattening Buddhism (f.6 e.8)  V  2.768  pleasure  2.644  suffering 0.038  peaks  3.07  troughs  2.17  SD(pl) 0.35  neg   0%  liking spread 0.16  growth +0.172
+   jhana Buddhism (v.2 e.8)       V  3.259  pleasure  3.128  suffering 0.035  peaks  3.64  troughs  2.49  SD(pl) 0.45  neg   0%  liking spread 0.26  growth +0.212
+  chronic distress (feed, inflow 0.3)
+   craving 1.00 (baseline)        V -0.181  pleasure  1.070  suffering 0.725  peaks  1.29  troughs  0.78  SD(pl) 0.20  neg  43%  liking spread 0.24  growth +0.037
+   craving cut only               V  0.789  pleasure  1.648  suffering 0.529  peaks  1.90  troughs  1.34  SD(pl) 0.23  neg   9%  liking spread 0.21  growth +0.057
+   + calm e 0.8                   V  1.869  pleasure  1.877  suffering 0.104  peaks  2.24  troughs  1.50  SD(pl) 0.28  neg   0%  liking spread 0.23  growth +0.115
+   + flatten 0.3                  V  0.795  pleasure  1.674  suffering 0.539  peaks  2.01  troughs  1.38  SD(pl) 0.25  neg   9%  liking spread 0.19  growth +0.096
+   + flatten 0.6                  V  0.661  pleasure  1.643  suffering 0.591  peaks  2.04  troughs  1.34  SD(pl) 0.27  neg  11%  liking spread 0.16  growth -0.148
+   + vivid 0.2                    V  1.193  pleasure  2.021  suffering 0.514  peaks  2.44  troughs  1.55  SD(pl) 0.34  neg   7%  liking spread 0.25  growth +0.103
+   flattening Buddhism (f.6 e.8)  V  1.844  pleasure  1.878  suffering 0.117  peaks  2.26  troughs  1.49  SD(pl) 0.30  neg   0%  liking spread 0.16  growth -0.141
+   jhana Buddhism (v.2 e.8)       V  2.323  pleasure  2.328  suffering 0.102  peaks  2.72  troughs  1.79  SD(pl) 0.36  neg   0%  liking spread 0.25  growth +0.133
+  default life
+   craving 1.00 (baseline)        V -0.730  pleasure  0.494  suffering 0.687  peaks  0.54  troughs  0.43  SD(pl) 0.15  neg  97%  liking spread 0.10  growth -0.110
+   craving cut only               V -0.287  pleasure  0.718  suffering 0.577  peaks  0.87  troughs  0.59  SD(pl) 0.17  neg  93%  liking spread 0.10  growth -0.165
+   + calm e 0.8                   V  0.672  pleasure  0.752  suffering 0.115  peaks  0.93  troughs  0.62  SD(pl) 0.18  neg   1%  liking spread 0.11  growth -0.185
+   + flatten 0.3                  V -0.267  pleasure  0.677  suffering 0.547  peaks  0.74  troughs  0.60  SD(pl) 0.18  neg  96%  liking spread 0.10  growth -0.009
+   + flatten 0.6                  V -0.269  pleasure  0.672  suffering 0.545  peaks  0.74  troughs  0.60  SD(pl) 0.18  neg  96%  liking spread 0.10  growth +0.003
+   + vivid 0.2                    V -0.197  pleasure  0.790  suffering 0.568  peaks  0.97  troughs  0.63  SD(pl) 0.22  neg  83%  liking spread 0.12  growth -0.231
+   flattening Buddhism (f.6 e.8)  V  0.631  pleasure  0.698  suffering 0.108  peaks  0.78  troughs  0.62  SD(pl) 0.18  neg   1%  liking spread 0.11  growth +0.022
+   jhana Buddhism (v.2 e.8)       V  0.753  pleasure  0.830  suffering 0.113  peaks  1.02  troughs  0.66  SD(pl) 0.23  neg   0%  liking spread 0.14  growth -0.247
+
+E2. Break-even flattening: how much evening-out cancels the gain from cutting craving?
+   (craving 0 with flattening f, against craving 1 with none; first f at or below baseline)
+   C5 world (feed present)              no calm    baseline  1.197 | f: 0.0:2.31 0.1:2.34 0.2:2.35 0.3:2.36 0.4:2.36 0.5:2.37 0.6:2.37 0.7:2.38 0.8:2.39 0.9:2.37 1.0:1.41 | break-even none up to 1.0
+   C5 world (feed present)              calm e 0.8 baseline  1.197 | f: 0.0:2.72 0.1:2.74 0.2:2.75 0.3:2.74 0.4:2.75 0.5:2.76 0.6:2.77 0.7:2.78 0.8:2.78 0.9:2.78 1.0:1.69 | break-even none up to 1.0
+   chronic distress (feed, inflow 0.3)  no calm    baseline -0.181 | f: 0.0:0.79 0.1:0.79 0.2:0.80 0.3:0.80 0.4:0.81 0.5:0.69 0.6:0.66 0.7:0.63 0.8:0.61 0.9:0.54 1.0:-0.12 | break-even none up to 1.0
+   chronic distress (feed, inflow 0.3)  calm e 0.8 baseline -0.181 | f: 0.0:1.87 0.1:1.89 0.2:1.90 0.3:1.92 0.4:1.85 0.5:1.84 0.6:1.84 0.7:1.81 0.8:1.84 0.9:1.81 1.0:1.12 | break-even none up to 1.0
+   default life                         no calm    baseline -0.730 | f: 0.0:-0.29 0.1:-0.28 0.2:-0.26 0.3:-0.27 0.4:-0.27 0.5:-0.27 0.6:-0.27 0.7:-0.27 0.8:-0.27 0.9:-0.27 1.0:-0.31 | break-even none up to 1.0
+   default life                         calm e 0.8 baseline -0.730 | f: 0.0:0.67 0.1:0.67 0.2:0.67 0.3:0.64 0.4:0.64 0.5:0.64 0.6:0.63 0.7:0.63 0.8:0.63 0.9:0.63 1.0:0.59 | break-even none up to 1.0
+
+E3. Does flattening help where life is mostly bad? (craving 0, calm 0.8, default life)
+   flatten 0.0                    V  0.672  pleasure  0.752  suffering 0.115  peaks  0.93  troughs  0.62  SD(pl) 0.18  neg   1%  liking spread 0.11  growth -0.185
+   flatten 0.3                    V  0.643  pleasure  0.710  suffering 0.109  peaks  0.78  troughs  0.63  SD(pl) 0.16  neg   1%  liking spread 0.10  growth -0.005
+   flatten 0.6                    V  0.631  pleasure  0.698  suffering 0.108  peaks  0.78  troughs  0.62  SD(pl) 0.18  neg   1%  liking spread 0.11  growth +0.022
+   flatten 0.9                    V  0.629  pleasure  0.695  suffering 0.108  peaks  0.77  troughs  0.61  SD(pl) 0.19  neg   1%  liking spread 0.11  growth +0.036
+
+E4. Flattening that also makes choice careless (random pick with probability f), calm 0.8
+   C5 world (feed present)              baseline  1.197 | f: 0.0:2.72 0.1:2.69 0.2:2.65 0.3:2.52 0.4:2.43 0.5:2.28 0.6:2.16 0.7:2.03 0.8:1.89 0.9:1.76 1.0:1.67 | break-even none up to 1.0
+   chronic distress (feed, inflow 0.3)  baseline -0.181 | f: 0.0:1.87 0.1:1.83 0.2:1.77 0.3:1.65 0.4:1.52 0.5:1.33 0.6:1.20 0.7:1.07 0.8:1.00 0.9:0.91 1.0:0.82 | break-even none up to 1.0
+   default life                         baseline -0.730 | f: 0.0:0.67 0.1:0.63 0.2:0.59 0.3:0.56 0.4:0.56 0.5:0.58 0.6:0.62 0.7:0.68 0.8:0.77 0.9:0.86 1.0:0.91 | break-even none up to 1.0
+   C5, careless flatten 0.3 + calm V  2.525  pleasure  2.403  suffering 0.039  peaks  2.87  troughs  1.88  SD(pl) 0.39  neg   0%  liking spread 0.21  growth +0.132
+   C5, careless flatten 0.6 + calm V  2.164  pleasure  2.042  suffering 0.039  peaks  2.52  troughs  1.57  SD(pl) 0.37  neg   0%  liking spread 0.17  growth +0.138

@@ -7,6 +7,8 @@ One agent, one shared parameter set P, T periods of SLOTS uses each. Sources by 
   shared relief, loss with convex grief), feed (passive, salient, no competence),
   numb (fast relief, capacity cost, opponent-process rebound), acquired (Berlyne two-factor,
   calibrated to Szpunar 2004), practice (meditation: trains equanimity e / concept release cr).
+Opt-in, off by default: felt craving (tension, ref_infl; hx_craving.py); flattened or more vivid
+  liking and careless choice (flat, vivid, flat_choice; hx_equanimity.py).
 Felt yield of a use = g(S) * capacity * dull * attention(arousal, S, e) * base + competence.
   dull = 1 - K0*x*(1-cr) (categorizing load from expertise x) dulls positives AND felt suffering.
   attention = engagement(a) * (1+0.3a) / (1 + CAPT*S*(1-e)*(1+a))   (capture, inverted U)
@@ -86,6 +88,10 @@ def felt(s, st, bg):
     y *= 0.5 if bg else 1.0
     if k in ACTIVE and not bg:
         y += P["COMP"] * g(st["S"]) * st["c"]          # competence: producing effects
+    if st.get("vivid") and y > 0:                    # opt-in (hx_equanimity.py): liking itself more vivid
+        y *= 1 + st["vivid"]
+    if st.get("flat"):                               # opt-in (hx_equanimity.py): liking pulled toward the
+        y = (1 - st["flat"]) * y + st["flat"] * st["ybar"]   # running average of unflattened liking
     return y
 
 
@@ -148,7 +154,8 @@ def run(cfg, seed=0):
     W, T, SL = world(cfg), P["T"], P["SLOTS"]
     st = dict(S=cfg.get("S0", 1.0), c=1.0, e=cfg.get("e", 0.0), cr=cfg.get("cr", 0.0),
               x=cfg.get("x", P["X0"]), a=cfg.get("a", 0.5), B=1.0, over=0.0,
-              gamma=cfg.get("gamma", 1.0))
+              gamma=cfg.get("gamma", 1.0), flat=cfg.get("flat", 0.0), vivid=cfg.get("vivid", 0.0),
+              ybar=cfg.get("ybar0", 0.5))
     R = {k: 0.0 for k in P["PHI"]}
     carry, pend, build, pi = 0.0, 0.0, 0.0, cfg.get("pi", 0.0)
     rho_al, motf = cfg.get("rho_al", P["RHO_AL"]), cfg.get("motf", P["MOTF"])
@@ -174,6 +181,9 @@ def run(cfg, seed=0):
             if not pool:
                 break
             f = want_score if rng.random() < pi else liking_score
+            if st["flat"] and cfg.get("flat_choice") and rng.random() < st["flat"] * cfg["flat_choice"]:
+                chosen.append(pool[rng.integers(len(pool))])   # opt-in: indifference picks at random
+                continue
             chosen.append(max(pool, key=lambda s: f(s, st, cfg)))
         unmet = 0.0
         if tau:
@@ -184,8 +194,11 @@ def run(cfg, seed=0):
             k = s["kind"]; s["uses"] += 1
             log["uses"][k] = log["uses"].get(k, 0) + 1
             bg = k == "feed" or (k in ("sensory", "acquired") and rng.random() < cfg.get("bg", 0))
-            y = felt(s, st, bg) * (1 if k in EXEMPT else rng.uniform(0.8, 1.2))
+            nz = 1 if k in EXEMPT else rng.uniform(0.8, 1.2)
+            y = felt(s, st, bg) * nz
             (log["feed_y"] if k == "feed" else log["other_y"]).append(y)
+            if st["flat"] and k not in EXEMPT:           # average of what would be felt unflattened
+                st["ybar"] += 0.05 * (felt(s, dict(st, flat=0.0), bg) * nz - st["ybar"])
             if i < len(planned):
                 v += P["ANT"] * max(s["v"], 0)           # anticipation of planned pleasures
             if k == "relief":
